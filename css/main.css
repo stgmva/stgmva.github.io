@@ -15,15 +15,15 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #b58900;
+  color: #2aa198;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue',  Helvetica, Arial, sans-serif;
   font-weight: 700;
-  color: #cc3300
+  color: #cb4b16
 }
 a {
-  color: #cc3300;
+  color: #cb4b16;
 }
 a:hover,
 a:focus {
@@ -37,7 +37,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #cc3300;
+  color: #cb4c16;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;

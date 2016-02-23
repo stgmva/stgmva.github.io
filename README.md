@@ -1,202 +1,214 @@
-# Pixyll
+# Beautiful Jekyll
 
-[pixyll.com](http://www.pixyll.com)
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes or look at [my personal website](http://deanattali.com) to see it in use. You can also see examples of websites other people created using this theme [here](#featured-users).
 
-![Pixyll screenshot](https://cloud.githubusercontent.com/assets/1424573/3847467/134aa236-1e66-11e4-8421-4e8c122118dc.png)
+This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used for any [GitHub Pages](https://pages.github.com/) website.  If you don't know what Jekyll and GitHub Pages are, you can still use these instructions to build a site quickly, but it might make a little more sense if you read up on them just a little bit.
 
-Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
+Feel free to modify this in any way you'd like, but I would appreciate it if you don't remove the attribution to Beautiful Jekyll. I've noticed that many people copy this website and deliberately remove the tiny phrase that gives me credit, and it feels a bit sad to not get credit for the countless hours I've put into this. Don't make me sad!
 
-It's pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.
+If you need a bit of help or have comments, feel free to [contact me](http://deanattali.com/aboutme#contact). Even if you don't have anything important to say but found this useful, I'd love to [hear about it](http://deanattali.com/aboutme#contact). Lastly, if you like this theme, please consider [supporting me with a small donation](http://deanattali.com/aboutme#feed-meeee) if you want to make me extra happy. :)
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+### Table of contents
 
-中文版 <https://github.com/ee0703/pixyll-zh-cn>.
+- [Prerequisites](#prerequisites)
+- [Build your website in 3 steps](#build-your-website-in-3-steps)
+- [Add your own content](#add-your-own-content)
+- [Last important thing: YAML front matter](#last-important-thing-yaml-front-matter)
+- [Features](#features)
+- [More advanced features](#more-advanced-features)
+- [Advanced: local development](#advanced-local-development)
+- [Featured users](#featured-users)
+- [Credits](#credits)
+- [Contributions](#contributions)
+- [Known limitations](#known-limitations)
 
-## Getting Started
+## Prerequisites
 
-If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
+- You need to have a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `johnsmith.github.io`.  
+- It would be helpful to understand what Markdown is and how to write it. Markdown is just a way to take a piece of text and format it to look a little nicer.  For example, this whole instruction set that you're reading is written in markdown - it's just text with some words being bold/larger/part of bullet points. I recommend taking 5 minutes to learn markdown [with this amazingly easy yet useful tutorial](http://markdowntutorial.com/).
 
-```
-$ git clone git@github.com:johnotander/pixyll.git
-$ cd pixyll
-$ gem install bundler # If you don't have bundler installed
-$ bundle install
-```
+## Build your website in 3 steps
 
-#### Verify your Jekyll version
+Getting started is *literally* as easy as 1-2-3 :smile:   
+Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. You might need to wait a few seconds until the "video" gets back to its beginning.
 
-It's important to also check your version of Jekyll since this project uses Native Sass which
-is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
+![Installation steps](img/install-steps.gif)
 
-### Fork, then clone
+### 1. Fork this repository 
 
-Fork the repo, and then clone it so you've got the code locally.
+(Assuming you are on this page and logged in to GitHub) Fork this repository by clicking the Fork button on the top right corner. Forking means that you now copied this whole project and all the files into your account.
 
-### Modify the `_config.yml`
+### 2. Rename the repository to `yourusername.github.io`
 
-The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
-for the Jekyll site. The defaults are:
+This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at `http://yourusername.github.io` within a couple minutes.  To do this, click on "Settings" on the right (the tools icon) and there you'll have an option to rename.
 
-```yml
-# Site settings
-title: Pixyll
-email: your_email@example.com
-author: John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl: ""
-url: "http://pixyll.com"
+### 3. Customize your website settings
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-paginate: 3
-```
+Edit the `_config.yml` file to change all the settings to reflect your site. To edit the file, click on it and then click on the pencil icon (watch the video tutorial above if you're confused).  The settings in the file are fairly self-explanatory and I added comments inside the file to help you further. Any line that begins with a pound sign (`#`) is a comment, and the rest of the lines are settings.
 
-### Jekyll Serve
+Another way to edit the config file (or any other file) is to use [prose.io](http://prose.io/), which is just a simple interface to allow you to more intuitively edit files or new new files to your project.
 
-Then, start the Jekyll Server. I always like to give the `--watch` option so it updates the generated HTML when I make changes.
+After you save your changes to the config file (by clicking on "Commit changes" as the video tutorial shows), your website should be ready in a minute or two at `yourusername.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so.
 
-```
-$ jekyll serve --watch
-```
+You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages. Your website is at `http://yourusername.github.io` (replace `yourusername` with your user name). Do not add `www` to the URL - it will not work!
 
-Now you can navigate to `localhost:4000` in your browser to see the site.
+**Note:** The video above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
-### Using Github Pages
+### Add your own content
 
-You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
+To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write mardown than HTML, so I suggest you do that (use the tutorial above if you need to learn markdown). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated the pretty text. Very easy!
 
-#### A configuration tweak if you're using a gh-pages sub-folder
+In contrast, look at [`index.html`](./index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
 
-In addition to your github-username.github.io repo that maps to the root url, you can serve up sites by using a gh-pages branch for other repos so they're available at github-username.github.io/repo-name.
+Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.  After you successfully add your own post, you can delete the existing files [`_posts`](./_posts), as those are just demo posts to help you learn.
 
-This will require you to modify the `_config.yml` like so:
+As mentioned previously, you can use [prose.io](http://prose.io/) to add or edit files instead of doing it directly on GitHub, it can be a little easier that way.
 
-```yml
-# Site settings
-title: Repo Name
-email: your_email@example.com
-author: John Otander
-description: "Repo description"
-baseurl: "/repo-name"
-url: "http://github-username.github.io"
+### Last important thing: YAML front matter
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-paginate: 3
-```
-
-This will ensure that the the correct relative path is constructed for your assets and posts. Also, in order to run the project locally, you will need to specify the blank string for the baseurl: `$ jekyll serve --baseurl ''`.
-
-##### If you don't want the header to link back to the root url
-
-You will also need to tweak the header include `/{{ site.baseurl }}`:
-
-```html
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ site.url }}/{{ site.baseurl }}">{{ site.title }}</a>
-      <nav class="site-nav right">
-        {% include navigation.html %}
-      </nav>
-    </div>
-  </div>
-</header>
-```
-
-A relevant Jekyll Github Issue: <https://github.com/jekyll/jekyll/issues/332>
-
-### Contact Form
-
-The contact form uses <http://formspree.io>. It will require you to fill the form out and submit it once, before going live, to confirm your email.
-
-More setup instructions and advanced options can be found at [http://formspree.io](http://formspree.io/)
-
-### Disqus
-
-To configure Disqus, set up a [Disqus site](https://disqus.com/admin/create/) with the same name as your site. Then, in `_config.yml`, edit the `disqus_shortname` value to enable Disqus.
-
-### Customizing the CSS
-
-All variables can be found in the `_sass/_variables.scss` file, toggle these as you'd like to change the look and feel of Pixyll.
-
-### Page Animation
-
-If you would like to add a [fade-in-down effect](http://daneden.github.io/animate.css/), you can add `animated: true` to your `_config.yml`.
-
-### Put in a Pixyll Plug
-
-If you want to give credit to the Pixyll theme with a link to <http://pixyll.com> or my personal website <http://johnotander.com> somewhere, that'd be awesome. No worries if you don't.
-
-### Web analytics and search engines
-
-You can measure visits to your website either by using [Google Analytics](https://www.google.com/analytics/) tracking embed or the more advanced [Google Tag Manager](https://www.google.com/analytics/tag-manager/) container.
-* For Google Analytics set up the value for `google_analytics`, it should be something like `google_analytics: UA-XXXXXXXX-X`.
-* For Google Tag Manager set up the value for `google_tag_manager`, it should be something like: `google_tag_manager: GTM-XXXXX`.
-* _Do not_ set both of above methods because this will cause conflicts and skew your reporting data.
-* Remember that you need to properly configure the GTM container in its admin panel if you want it to work. More info is available in [GTM's docs](https://www.google.com/analytics/tag-manager/resources/).
-
-Your website is, by default, set to be allowed for crawling and indexing by search engines. (Unless you made yourself a custom robots.txt file). You can use front matter settings on each page to control how search engines will it. Sometimes you may want to exclude a particular page from indexing or forbid Google to store a copy of your page in its cache. It is up to you. Use the `meta_robots` frontmatter key and assign values based on [this table](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=en#valid-indexing--serving-directives). Some examples:
-
-```yaml
-# exclude page from index
-meta_robots: noindex
-
-# allow indexing, disallow caching
-meta_robots: noarchive
-
-# allow indexing, disallow crawling links
-meta_robots: nofollow
-
-# disallow indexing, follow links
-meta_robots: noindex,follow
-```
-
-In order to get more information about your website's status in search engines, you can register it in [Google Search Console](https://www.google.com/webmasters/tools/home) and/or [Bing Webmaster Tools](http://www.bing.com/toolbox/webmaster). Both these tools will ask you to authorize your website with them and there are couple of ways to do that. Pixyll supports verification via meta tags - just fill in values for `google_verification` and/or `bing_verification` in `_config.yml`, the verification strings and meta tags will then be added automatically.
-
-If search engine optimization is your thing, you can also set up `meta_description` values for each page/post. By default Pixyll uses `summary` to populate the `<meta name="description" content="...">` tag and falls back to `description` from `_config.yml` if `summary` is not present in page/post's front matter. The `summary` is also used for generating Open Graph tags. Why would you want to use a dedicated variable for meta description? Because character limit to properly display this description in search results (as a snippet) is way smaller than in Open Graph. It is recommended to keep it at 155-160 characters, for more in-depth info read [this article](https://moz.com/blog/i-cant-drive-155-meta-descriptions-in-2015).
-
-And lastly - if you happen to write in language other than English be sure to change `og_locale` in `_config.yml` to reflect it.
-
-### Enjoy
-
-I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an [issue](https://github.com/johnotander/pixyll/issues). I'd love to help.
-
-## Upgrading Pixyll
-
-Pixyll is always being improved by its users, so sometimes one may need to upgrade.
-
-#### Ensure there's an upstream remote
-
-If `git remote -v` doesn't have an upstream listed, you can do the following to add it:
+In order to have your new pages use this template and not just be plain pages, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. This is where you'll give each page some parameters that I made available, such as a title and subtitle. I'll go into more detail about what parameters are available later. If you don't want to use any parameters on your new page (this also means having no title), then use the empty YAML front matter:
 
 ```
-git remote add upstream https://github.com/johnotander/pixyll.git
+---
+---
 ```
 
-#### Pull in the latest changes
+If you want to use any parameters, write them between the two lines. For example, you can have this at the top of a page:
 
 ```
-git pull upstream master
+---
+title: Contact me
+subtitle: Here you'll find all the ways to get in touch with me
+---
 ```
 
-There may be merge conflicts, so be sure to fix the files that git lists if they occur. That's it!
+You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
 
-## Thanks to the following
+**Important takeaway: always add the YAML front matter to every page, which is two lines with three dashes. If you have any parameters, they go between the two lines.**    
+If you don't include YAML then your file will not use the template.
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
-* [Animate.css](http://daneden.github.io/animate.css/)
+## Features
 
-## Contributing
+#### Mobile-first
+**Beautiful Jekyll** is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone and your gigantic iMac, and the site will work well on both, though it will look slightly different.
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+#### Personalization
+
+Many personalization settings in `_config.yml`, such as setting your name and site's description, setting your avatar to add a little image in the navigation bar, and customizing what social media links to show in the footer
+
+#### Letting users leave comments
+
+If you want to enable comments on your site, Beautiful Jekyll supports the [Disqus](https://disqus.com/) comments plugin.  To use it, simply sign up to Disqus and add your Disqus shortname to the `disqus` parameter in the `_config.yml`.
+
+If the `disqus` parameter is set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
+
+#### Adding Google Analytics to track page views
+
+Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.  
+
+#### Page types
+
+- **post** - To write a blog post, add a markdown or HTML file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see examples of how to use YAML parameters in blog posts.
+- **page** - To add a non-blog page, add a markdown or HTML file in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
+- **minimal** - To add a random page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal`.
+- To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter. Only do this if you know what you're doing.
+
+#### YAML front matter parameters
+
+These are the main parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
+
+Parameter   | Description
+----------- | -----------
+layout      | What type of page this is (recommended options are `page`, `post`, or `minimal`)
+title       | Page or blog post title
+subtitle    | Short description of page or blog post
+comments    | If you want do add Disqus comments to a specific page, use `comments: true`. Comments are automatically enabled on blog posts, to turn comments off for a specific post, use `comments: false`. Comments only work if you set your Disqus id in the _config.yml file.
+js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
+ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
+css         | List of local CSS files to include in the page
+ex-css      | List of external CSS files to include in the page
+googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
+fb-img      | If you want to share a page on Facebook, by default Facebook will use the first image it can find on the page.  If you want to specify an image to use when sharing the page on Facebook, then provide the image's URL here
+
+### RSS feed
+
+Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to add a link to your RSS feed in the footer of every page, find the `rss: false` line in `_config.yml` and change it to `rss: true`.
+
+### GitHub Project page vs user page
+
+If you're not sure what the difference is, then ignore this section.
+
+If you want to use this theme for a project page for a specific repository instead of your main GitHub user page, that's no problem. The demo for this site ([daattali.github.io/beautiful-jekyll](http://deanattali.com/beautiful-jekyll)) is actually set up as a project page while my personal site ([daattali.github.io](http://deanattali.com)) is a regular user page.  The only difference is that in the `_config.yml`, you should set `baseurl` to be `/projectname` instead of `""`.
+
+To set up a GitHub Project page, simply fork this repository into a branch called `gh-pages` in your repository. Whatever is under the `gh-pages` branch will be served by Jekyll. Your site will be at `http://username.github.io/projectname/`.
+
+---
+
+### More advanced features
+
+I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
+
+### Advanced: Local development
+
+Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Folow these simple steps to do that with Vagrant:
+
+1. Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com)
+2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
+3. Inside your repository folder, run `vagrant up`
+4. View your website at `http://0.0.0.0:4000` on *nix or `http://127.0.0.1:4000` on Windows. 
+5. Commit any changes and push everything to the master branch of your GitHub repository. GitHub Pages will then rebuild and serve your website automatically.
+
+Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
+
+### Featured users
+
+To my huge surprise, Beautiful Jekyll has been used in over 500 websites in its first 6 months. Here is a hand-picked selection of some websites that use Beautiful Jekyll.
+
+Want your website featured here? [Contact me](http://deanattali.com/aboutme#contact) to let me know about your website.
+
+#### Project/company websites
+
+| Website | Description |
+| :------ |:----------- |
+| [teampass.net](http://teampass.net) | Collaborative Passwords Manager |
+| [derekogle.com/fishR](http://derekogle.com/fishR/) | Using R for Fisheries Analyses |
+| [bigdata.juju.solutions](http://bigdata.juju.solutions) | Creating Big Data solutions Juju Solutions |
+| [joecks.github.io/clipboard-actions](http://joecks.github.io/clipboard-actions/) | Clipboard Actions - an Android app |
+| [embedded.guide](http://embedded.guide) | Writing an Embedded OS |
+| [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
+| [organicrails.github.io](http://organicrails.github.io) | Ruby on Rails tutorial |
+| [esentire.github.io](https://esentire.github.io) | Blog about threats and malware | 
+
+#### Personal websites
+
+| Website | Who | What |
+| :------ |:--- | :--- |
+| [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
+| [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
+| [scottsmerchek.com](http://scottsmerchek.com) | Scott Smerchek | Software developer |
+| [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
+| [drissamri.be](https://drissamri.be) | Driss Amri | Software engineer |
+| [adammckay.co.uk](http://adammckay.co.uk) | Adam McKay | Software developer |
+| [tomwhite.io](http://tomwhite.io) | Thomas White | Ecology PhD student |
+| [rikosjett.no](http://rikosjett.no) | Ronnie André Bjørvik Sletta | I'm not sure, his website is in Norwegian... |
+| [bkkkk.github.io](http://bkkkk.github.io) | Jacobo Blanco | Data scientist |
+| [chadchae.github.io](http://chadchae.github.io) | Chad Chae | Data analyst |
+| [trappmartin.github.io](http://trappmartin.github.io) | Martin Trapp | Machine learning researcher |
+
+### Credits
+
+This template was not made entirely from scratch. I would like to give special thanks to:
+- [Barry Clark](https://github.com/barryclark) and his project [Jekyll Now](https://github.com/barryclark/jekyll-now), from whom I've taken several ideas and code snippets, as well as some documenation tips.
+- [Iron Summit Media](https://github.com/IronSummitMedia) and their project [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from which I've used some design ideas and some of the templating code for posts and pagination.
+
+I'd also like to thank [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
+
+### Contributions
+
+If you find anything wrong or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
+
+If you do fork this project to use as a template for your site, I would appreciate if you keep the link in the footer to this project.  I've noticed that several people who forked this repo removed the attribution and I would prefer to get the recognition if you do use this :)
+
+### Known limitations
+
+- If you have a project page and you want a custom 404 page, you must have a custom domain.  See https://help.github.com/articles/custom-404-pages/.  This means that if you have a regular User Page you can use the 404 page from this theme, but if it's a website for a specific repository, the 404 page will not be used.

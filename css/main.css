@@ -77,12 +77,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0066cc;
+  background: #b58900;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0066cc;
+  background: #b58900;
 }
 img::selection {
   color: white;
@@ -107,7 +107,7 @@ img::-moz-selection {
 
 .navbar-custom {
   background: #002b36;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #2aa198;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -120,14 +120,14 @@ img::-moz-selection {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #EAEAEA;
+  color: #2aa198;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0066cc;
+  color: #b58900;
 }
 
 @media only screen and (min-width: 768px) {
@@ -224,7 +224,7 @@ footer .theme-by {
 
 .post-preview {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2aa198;
 }
 
 @media only screen and (min-width: 768px) {
@@ -245,7 +245,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0066cc;
+  color: #b58900;
 }
 
 .post-preview .post-title {
@@ -355,8 +355,8 @@ header.header-post .post-heading .post-subheading {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #0066cc;
-  border: 1px solid #0066cc;
+  background: #b58900;
+  border: 1px solid #b58900;
 }
 
 .pager {

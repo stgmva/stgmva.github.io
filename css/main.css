@@ -27,11 +27,11 @@ a {
 }
 a:hover,
 a:focus {
-  color: #002b36;
+  color: #b58900;
 }
 blockquote {
   background: #fdf6e3;
-  border-left: 5px solid #002b36;
+  border-left: 5px solid #2aa198;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";

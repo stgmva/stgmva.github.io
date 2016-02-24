@@ -63,7 +63,7 @@ Unlike a standard board made by an OEM, this keyboard is programmable, I can set
 
 I've gone with the following layout for this build. 
 
-~~~r
+~~~c
 /* 0: DEFAULT LAYER
  * ,-----------------------------------------------------------.
  * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  #|Bsp|

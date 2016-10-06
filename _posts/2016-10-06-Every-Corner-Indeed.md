@@ -11,6 +11,9 @@ subtitle:
 
 [[via Remezcla](http://remezcla.com/lists/culture/taco-trucks-voter-registration-texas-arizona/)]
 
+
+{% tweet https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 %}
+
 I love this response. Anything to get more voters registered is a good thing.
 
 ---

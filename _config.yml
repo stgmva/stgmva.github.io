@@ -57,6 +57,8 @@ url-pretty: "missourivalleyambulance.com"  # eg. "deanattali.com/beautiful-jekyl
 
 # --- Misc --- #
 
+gems: ['jekyll-twitter-plugin']
+
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""
 

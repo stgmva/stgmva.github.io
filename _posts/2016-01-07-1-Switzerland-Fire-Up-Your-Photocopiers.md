@@ -11,11 +11,9 @@ Did you think that was an Apple Watch? You'd be wrong.
 ...  
 Only 50 pieces will be made, all in white gold, and at a price of $24,900 – only a little bit more than the all-rose-gold Apple Watch Edition.
 
-If the watch costs that much, I wonder how much the [photocopier](http://www.youtube.com/watch?v=N-2C2gb6ws8&t=0m32s) was. 
+If the watch costs that much, I wonder how much the [photocopier](http://www.youtube.com/watch?v=N-2C2gb6ws8&t=0m32s) was.
 
-via [Hodinkee](https://www.hodinkee.com/articles/the-h-moser-and-cie-swiss-alp-watch-a-not-so-subtle-jab-at-the-apple-watch/)
+[[via Hodinkee](https://www.hodinkee.com/articles/the-h-moser-and-cie-swiss-alp-watch-a-not-so-subtle-jab-at-the-apple-watch/)]
 
  ---
 <p align="right">Typed on Octopage</p>
-
-

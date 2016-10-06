@@ -5,7 +5,7 @@ subtitle: Build Log of my SKCM Orange Alps64.
 ---
 ![Title Image](http://imgur.com/A2SqBlg.jpg)
 
-As detailed in a [previous post](http://missourivalleyambulance.com/2015-12-12-2-On-Becoming-A-Keyboard-Wonk/), the first board that prompted me to become a keyboard wonk was an Apple Extended Keyboard II with white alps switches. I had the privilege to join Hasu's round 2 [Alps PCB group buy](https://geekhack.org/index.php?topic=69740.0), from which I built my first custom keyboard. 
+As detailed in a [previous post]({{ site.baseurl }}/2015-12-12-2-On-Becoming-A-Keyboard-Wonk/), the first board that prompted me to become a keyboard wonk was an Apple Extended Keyboard II with white alps switches. I had the privilege to join Hasu's round 2 [Alps PCB group buy](https://geekhack.org/index.php?topic=69740.0), from which I built my first custom keyboard. 
 
 A few months ago, [BlueNalgene](https://geekhack.org/index.php?action=profile;u=41109) ran a much more comprehensive [group buy](https://geekhack.org/index.php?topic=75491.0) that included no only [Hasu's](https://geekhack.org/index.php?action=profile;u=3412) PCB, but also [JDCarpe](https://geekhack.org/index.php?action=profile;u=17386) designed plates, Matias switches, and stabilizers. Of course, I already had the one 60% alps board, but given that I had a few spare donor boards lying around, I couldn't help buy join this buy so I could build EVEN MORE awesome custom keyboards. 
 
@@ -63,10 +63,16 @@ Unlike a standard board made by an OEM, this keyboard is programmable, I can set
 
 I've gone with the following layout for this build. 
 
-~~~c
+```c
+#include "keymap_common.h"
+
+/*
+ * Hasu
+ */
+const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* 0: DEFAULT LAYER
  * ,-----------------------------------------------------------.
- * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  #|Bsp|
+ * |Esc  |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  #|Bsp|
  * |-----------------------------------------------------------|
  * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|DEL  |
  * |-----------------------------------------------------------|
@@ -74,15 +80,15 @@ I've gone with the following layout for this build. 
  * |-----------------------------------------------------------|
  * |Shft|  \|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Esc|
  * |-----------------------------------------------------------'
- * |Ctrl|ALT |GUI |      Space/FN1        |FN2  |GUI |FN3/Ctrl |
+ * |Ctrl|ALT |GUI |      Space/FN1    |FN2 |Alt |GUI |FN3/Ctrl |
  * `-----------------------------------------------------------'
  */
-[0] =KEYMAP_AEK( \
-    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
+[0] =KEYMAP( \
+    ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NUHS, BSPC, \
     TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,DEL, \
     CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,ENT,  \
-    LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT, \
-    LCTL,LALT,LGUI,          FN1,                     FN2, LGUI,FN3),
+    LSFT,NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,ESC, \
+    LCTL,LALT,LGUI,          FN1,                     FN2, RALT,FN3,RCTL),
 
   /* 0: MORGAN LAYER
   * ,-----------------------------------------------------------.
@@ -90,20 +96,79 @@ I've gone with the following layout for this build. 
   * |-----------------------------------------------------------|
   * |Tab  |  Q| UP|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|  \  |
   * |-----------------------------------------------------------|
-  * |Caps|LEFT|DOWN|RIGHT|  F|  G|  H|  J|  K|  L|  ;|  '|Enter |
+  * |Caps  |LEFT|DOWN|RIGHT|  F|  G|  H|  J|  K|  L|  ;|  '|Enter   |
   * |-----------------------------------------------------------|
   * |Shft|  \|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Esc|
   * |-----------------------------------------------------------'
-  * |Ctrl|Gui |Alt |         Space          |FN2 |GUI |FN3/CTRL |
+  * |Ctrl|Gui |Alt |         Space         |FN2 |Alt |GUI |Ctrl |
   * `-----------------------------------------------------------'
   */
- [1] =KEYMAP_AEK( \
-     GRV,MUTE,VOLD,VOLU,MPRV,MPLY,MNXT,   7,   8,   9,   0, MINS,P PLS, BSPC, \
-     TAB, Q, UP, E, HOME,   T,   Y,   4,   5,   6, PAST, LBRC, RBRC, BSLS, \
-     CAPS,LEFT,DOWN,RIGHT, END,   G,   H,   1,   2,   3,  PSLS,  QUOT, ENT,  \
-     LSFT,Z,   X,   C,   V,   B,   N, F13, COMM, DOT, SLSH, RSFT, \
-     LCTL, TRNS, TRNS,       TRNS,                    TRNS, TRNS, TRNS),
-~~~
+ [1] =KEYMAP( \
+     GRV,MUTE,VOLD,VOLU,MPRV,MPLY,MNXT,   7,   8,   9,   0,   MINS,PPLS, NUHS, BSPC, \
+     TAB, Q,  UP,   E,HOME,   T,   Y,   4,   5,   6,PAST,   LBRC,RBRC,BSLS, \
+     CAPS,LEFT,DOWN,RIGHT, END,   G,   H,   1,   2,   3,  PSLS,  QUOT,  ENT,  \
+     LSFT,NUBS,Z,   X,   C,   V,   B,   N, F13,   COMM,DOT, SLSH,RSFT,ESC, \
+     LCTL,TRNS,TRNS,          TRNS,                     TRNS, RALT,TRNS,TRNS),
+
+  /* 0: DEFAULT LAYER
+   * ,-----------------------------------------------------------.
+   * |Esc  |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  #|Bsp|
+   * |-----------------------------------------------------------|
+   * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|DEL  |
+   * |-----------------------------------------------------------|
+   * |Caps  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Enter   |
+   * |-----------------------------------------------------------|
+   * |Shft|  \|  Z|  X|  FN4|  V|  B|  N|  M|  ,|  .|  /|Shift |Esc|
+   * |-----------------------------------------------------------'
+   * |Ctrl|ALT |GUI |      Space/FN1    |FN2 |Alt |FN3/GUI |Ctrl |
+   * `-----------------------------------------------------------'
+   */
+  [2] =KEYMAP( \
+   ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, NUHS, BSPC, \
+   TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,DEL, \
+   CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,ENT,  \
+   LSFT,NUBS,Z,   X,   FN4,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,ESC, \
+   LCTL,LALT,LGUI,          TRNS,                     TRNS, RALT,TRNS,TRNS),
+
+};
+
+
+/* id for user defined function/macro */
+enum function_id {
+    NONE,
+};
+
+enum macro_id {
+    COPY_TAB_PASTE,
+};
+
+
+/*
+ * Fn action definition
+ */
+const uint16_t PROGMEM fn_actions[] = {
+    [0]  = ACTION_LAYER_MOMENTARY(1),                  // Default
+    [1]  = ACTION_LAYER_TAP_KEY(1, KC_SPC),            // MORGAN LAYER
+    [2]  = ACTION_LAYER_TOGGLE(1),
+    [3]  = ACTION_LAYER_MOMENTARY(2),                  // CMD Layer
+    [4]  = ACTION_MACRO(COPY_TAB_PASTE),               // Copy tab paste in browser
+};
+
+
+/*
+ * Macro definition
+ */
+const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
+{
+    switch (id) {
+        case COPY_TAB_PASTE:
+            return (record->event.pressed ?
+                    MACRO( D(LGUI), T(C), T(T), T(V), U(LGUI), T(ENT), END ) :
+                    MACRO( END ) );
+    }
+    return MACRO_NONE;
+}
+```
 
 Note: the Space/FN1 key - I love this setup. During normal typing, the space bar is a space bar, but when it's held it activates the 2nd layer.  
 

@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About me
+title: About 
 subtitle: 
 ---
 <img src="\img\Profile.jpeg" alt="" style="width:25%">
 
-### My name is Morgan Speck.
+### Morgan
 
-- I'm a gadget geek
-- I'm definitely a member of the Apple cult
-- I'm an obnoxious keyboard wonk.
-- I rock a beard because I'm lazy (and my girlfriend loves it).
+- Former gadget geek
+- Full-time Apple fanboy
+- Obnoxious keyboard wonk.
+- Beard
 - Every list needs a 5.
 
-Follow me on twitter [@morganspeck](https://twitter.com/morganspeck)
+twitter [@morganspeck](https://twitter.com/morganspeck)
 
-I'm [Cheddarbek](https://geekhack.org/index.php?action=profile;u=48354) on GeekHack
+Geekhack: [Cheddarbek](https://geekhack.org/index.php?action=profile;u=48354)

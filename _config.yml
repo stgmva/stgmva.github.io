@@ -67,7 +67,7 @@ timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title
-paginate: 10
+paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:

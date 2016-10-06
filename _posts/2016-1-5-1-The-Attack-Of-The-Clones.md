@@ -13,7 +13,7 @@ The [photocopier](http://www.youtube.com/watch?v=N-2C2gb6ws8&t=0m32s) market mus
 
 OEMs, please start coming up with original ideas. There are companies out there who are  [capable](https://www.microsoft.com/surface/en-us/devices/surface-book).
 
-via [Macrumors](http://www.macrumors.com/2016/01/05/lenovo-lg-hp-macbook-lookalikes-ces-2016/)
+[via [Macrumors](http://www.macrumors.com/2016/01/05/lenovo-lg-hp-macbook-lookalikes-ces-2016/)]
 
 ---
 <p align="right">Typed on my orange alps64</p>

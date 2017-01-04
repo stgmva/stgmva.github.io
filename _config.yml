@@ -1,143 +1,89 @@
-# --- Serving options --- #
+title:            Site Title
+description:      Describe your website here.
+disqus_shortname: 
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# Owner/author information
+owner:
+  name:           Your Name
+  avatar:         avatar.jpg
+  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
+  email:          you@email.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
 
-# If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "http://missourivalleyambulance.github.io"
-baseurl: ""
+# Background image to be tiled on all pages
+background: 
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
 
-# Of course don't forget to change the username and projectname to YOUR username and project
-
-# Name of website
-title: Missouri Valley Ambulance
-
-# Short description of your site
-description:
-
-# --- Navigation bar options --- #
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
-
-# List of links in the navigation bar
-navbar-links:
-  Home: ""
-  Projects: "projects"
-  About Me: "aboutme"
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Morgan Speck
-  email: "blog@missourivalleyambulance.com"
-  twitter: morganspeck  # eg. daattali
-
-
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: false
-  email: true
-  twitter: true
-  github: false
-  linkedin: false
-  stackoverflow: false
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "missourivalleyambulance.com"  # eg. "deanattali.com/beautiful-jekyll"
-
-# --- Misc --- #
-
-gems: ['jekyll-twitter-plugin']
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Chicago"
-markdown: kramdown
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
-permalink: /:year-:month-:day-:title
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
 paginate: 5
 
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true  # add comments to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "default"
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-# Exclude these files from production site
-exclude:
+include: 
+  - .htaccess
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
   - Gemfile
-  - Gemfile.lock
+  - Gruntfile.js
   - LICENSE
-  - README.md
-  - CNAME
-  - Vagrantfile
-
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

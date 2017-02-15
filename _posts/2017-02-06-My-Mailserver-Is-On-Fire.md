@@ -1,7 +1,24 @@
 ---
-layout: post
-title: Everything Is On Fire
-subtitle: Fixing A Broken Mailserver
+layout: page
+#
+# Content
+#
+subheadline: "Dummy"
+title: "You can delete this file"
+teaser: "deverythingisonfirederp"
+categories:
+  - dummy
+tags:
+  - dummy
+#
+# Styling
+#
+image:
+  header: ""
+  thumb: "you-can-delete-me-thumb.png"
+  homepage: "you-can-delete-me-homepage.png"
+  caption: "Caption?"
+  url: "http://phlow.de/"
 ---
 
 ![](http://imgur.com/8HYmOEt.jpg)

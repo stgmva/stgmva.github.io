@@ -3,8 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Dummy"
-title: "You can delete this file"
+subheadline: ""
+title: "Kinesis Test"
 teaser: "derpderpderpderpderpderpderpderpderpderpderpderpderpderpderp"
 categories:
   - dummy
@@ -23,9 +23,11 @@ image:
 
 ![](http://imgur.com/9pCXqKb.jpg)
 
-A few days I added a [Kinesis](https://www.kinesis-ergo.com/) Countoured Model 110 to my collection. The predecessor to the Advantage and the Advantage 2, this model is over 20 years old.
+>  few days I added a [Kinesis](https://www.kinesis-ergo.com/) Countoured Model 110 to my collection. The predecessor to the Advantage and the Advantage 2, this model is over 20 years old.
 
+```
 I got the board for a steal on [/r/mechmarket](https://www.reddit.com/r/mechmarket). The seller said the board was not functional, producing only a beeping tone when plugged in. I figured that if all else, even if the built-in electronics weren't functional that I could hand wire a matrix for it. Much to my surprise, using my PS/2 to USB adapter, the board is fully functional.
+```
 
 ![](http://imgur.com/Ji4qdVn.jpg)
 

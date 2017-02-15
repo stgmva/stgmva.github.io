@@ -4,7 +4,7 @@ layout: page
 # Content
 #
 subheadline: ""
-title: "Kinesis Test"
+title: "Kinesis Test 2"
 teaser: "derpderpderpderpderpderpderpderpderpderpderpderpderpderpderp"
 categories:
   - dummy
@@ -30,6 +30,7 @@ I got the board for a steal on [/r/mechmarket](https://www.reddit.com/r/mechmark
 ```
 
 ![](http://imgur.com/Ji4qdVn.jpg)
+![image-title-here](http://imgur.com/Ji4qdVn.jpg){:class="img-responsive"}
 
 The Kinesis is notable for its split design and ergonomic keywells.
 

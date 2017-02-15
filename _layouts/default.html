@@ -2,23 +2,22 @@
 layout: compress
 ---
 <!doctype html>
-<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+<html class="no-js" lang="{{ site.lang | slice: 0,2 | default: "en" }}">
 <head>
-	{% include _head.html %}
+	{% include helper/head.html %}
 </head>
 <body id="top-of-page" class="{{ layout.format }}">
 	{% unless page.skip_boilerplate %}
-	{% include _navigation.html %}
+	{% include helper/navigation.html %}
 	{% endunless %}
 
-	{% include _masthead.html %}
-
+	{% include helper/masthead.html %}
 	{{ content }}
 
 	{% unless page.skip_boilerplate %}
-	{% include _footer.html %}
+	{% include helper/footer.html %}
 	{% endunless %}
 
-	{% include _footer_scripts.html %}
+	{% include helper/footer_scripts.html %}
 </body>
 </html>

@@ -25,7 +25,7 @@ author: phlow
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
 url: 'https://stgmva.github.io'
-baseurl: '/derp/'
+baseurl: ''
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.

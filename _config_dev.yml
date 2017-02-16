@@ -3,13 +3,10 @@
 # everytime you work locally on the project, you start both config-files, overwriting
 # the first one with the development variables needed.
 #
-# Start development with › $ bundle exec jekyll serve --config _config.yml,_config_dev.yml
+# Start development with › $ jekyll serve --config _config.yml,_config_dev.yml
 
-baseurl: 	''
-
-# See › https://github.com/jekyll/jekyll-gist#disabling-noscript-support
-gist:
-  noscript: false
+url: 'http://localhost:4000'
+urlimg: 'http://localhost:4000/images/'
 
 sass:
   # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
@@ -21,4 +18,4 @@ sass:
   sourcemap: true
 
 # Disable when not in production
-google_analytics_tracking_id: false
+google_analytics_tracking_id:

@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: "STGMVA"
+title: "Missouri Valley Ambulance"
 
 
 # The slogan describes your website and is used on homepage in <title> and other important places
@@ -16,11 +16,11 @@ slogan: "Staging Site for MVA"
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes."
+description: "The latest in tinfoil hat fashion. Mostly keyboards, sometimes Apple, always tech."
 
 # Main author of the website
 # See > authors.yml
-author: phlow
+author: Morgan Speck
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
@@ -33,7 +33,7 @@ baseurl: ''
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://phlow.github.io/feeling-responsive/images/'
+urlimg: 'https://stgmva.github.io/images/'
 
 
 # Logo size is 600x80 pixels
@@ -98,7 +98,7 @@ defaults:
       show_meta: false 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for pages
+      author: Morgan Speck     # Default author for pages
   -
     scope:
       path: ""
@@ -107,7 +107,7 @@ defaults:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for posts
+      author: Morgan Speck     # Default author for posts
 
 
 
@@ -145,13 +145,13 @@ defaults:
 
 favicon-32x32:                          "favicon-32x32.png"
 touch-icon-192x192:                     "touch-icon-192x192.png"
-apple-touch-icon-180x180-precomposed:   "apple-touch-icon-180x180-precomposed.png"
-apple-touch-icon-152x152-precomposed:   "apple-touch-icon-152x152-precomposed.png"
-apple-touch-icon-144x144-precomposed:   "apple-touch-icon-144x144-precomposed.png"
-apple-touch-icon-120x120-precomposed:   "apple-touch-icon-120x120-precomposed.png"
-apple-touch-icon-114x114-precomposed:   "apple-touch-icon-114x114-precomposed.png"
-apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76-precomposed.png"
-apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72-precomposed.png"
+apple-touch-icon-180x180-precomposed:   "apple-touch-icon-180x180.png"
+apple-touch-icon-152x152-precomposed:   "apple-touch-icon-152x152.png"
+apple-touch-icon-144x144-precomposed:   "apple-touch-icon-144x144.png"
+apple-touch-icon-120x120-precomposed:   "apple-touch-icon-120x120.png"
+apple-touch-icon-114x114-precomposed:   "apple-touch-icon-114x114.png"
+apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76.png"
+apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72.png"
 apple-touch-icon-precomposed:           "apple-touch-icon-precomposed.png"
 msapplication_tileimage:                "msapplication_tileimage.png"               # Size 144x144
 msapplication_tilecolor:                "#fabb00"

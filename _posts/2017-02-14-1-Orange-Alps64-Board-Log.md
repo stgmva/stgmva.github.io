@@ -22,7 +22,7 @@ image:
 ---
 
 ```c
-#include "keymap_color-removed.h"
+#include "keymap_color-removed-all.h"
 
 /*
  * Hasu

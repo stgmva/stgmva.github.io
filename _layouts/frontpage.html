@@ -88,7 +88,7 @@ format: blog-index
 
     <div class="row">
         <div class="medium-6 columns">
-            {% for post in site.posts limit:1 %}
+            {% for post in site.posts limit:5 %}
             {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
             <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <p>

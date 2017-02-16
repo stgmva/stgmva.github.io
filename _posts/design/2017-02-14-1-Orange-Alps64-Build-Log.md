@@ -80,7 +80,7 @@ Unlike a standard board made by an OEM, this keyboard is programmable, I can set
 
 I've gone with the following layout for this build. 
 
-```c
+```
 #include "keymap_common.h"
 
 /*

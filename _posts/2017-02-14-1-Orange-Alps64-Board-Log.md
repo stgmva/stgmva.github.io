@@ -4,7 +4,7 @@ layout: page
 # Content
 #
 subheadline: ""
-title: "Orange Alps Derp Log"
+title: "Orange Alps Board Log"
 teaser: "Alps Orange"
 categories:
   - design

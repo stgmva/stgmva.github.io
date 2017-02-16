@@ -5,7 +5,7 @@ layout: page
 #
 subheadline: ""
 title: "Kinesis Test 2"
-teaser: "derpderpderpderpderpderpderpderpderpderpderpderpderpderpderp"
+teaser: "deKINESISpderp"
 categories:
   - design
 tags:

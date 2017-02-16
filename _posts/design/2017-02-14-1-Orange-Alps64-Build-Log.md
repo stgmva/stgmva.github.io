@@ -1,7 +1,24 @@
 ---
-layout: post
-title: Alps Party 60% Board #1
-subtitle: Build Log of my SKCM Orange Alps64.
+layout: page
+#
+# Content
+#
+subheadline: ""
+title: "Orange Alps Build Log"
+teaser: "Alps Orange"
+categories:
+  - design
+tags:
+  - design
+#
+# Styling
+#
+image:
+  header: ""
+  thumb: "you-can-delete-me-thumb.png"
+  homepage: "you-can-delete-me-homepage.png"
+  caption: "Caption?"
+  url: "http://phlow.de/"
 ---
 ![Title Image](http://imgur.com/A2SqBlg.jpg)
 

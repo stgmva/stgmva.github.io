@@ -1,7 +1,24 @@
 ---
-layout: post
-title: I'm Blue Da Ba Dee Da Ba Die...
-subtitle: Blue Alps Build (Video Log)
+layout: page
+#
+# Content
+#
+subheadline: ""
+title: "Blue alps"
+teaser: "blue alps"
+categories:
+  - design
+tags:
+  - design
+#
+# Styling
+#
+image:
+  header: ""
+  thumb: "you-can-delete-me-thumb.png"
+  homepage: "you-can-delete-me-homepage.png"
+  caption: "Caption?"
+  url: "http://phlow.de/"
 ---
 
 ![http://imgur.com/x7U3n8H.jpg](http://imgur.com/x7U3n8H.jpg)

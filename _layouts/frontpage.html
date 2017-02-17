@@ -72,10 +72,22 @@ format: blog-index
     {% endfor %}
 </div>
 
-<div class="row">
-	<div class="medium-8 columns t30">
-		{% include _pagination.html %}
-	</div><!-- /.medium-7.columns -->
+<nav id="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a class="radius button small" href="{{ site.url }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
+      {% else %}
+      <a class="radius button small" href="{{ site.url }}/page{{ paginator.previous_page }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous }}</a>
+      {% endif %}
+    {% endif %}
+
+    <a class="radius button small" href="{{ site.url }}/archive/" title="{{ site.data.language.blog_archive }}">{{ site.data.language.blog_archive }}</a>
+
+    {% if paginator.next_page %}
+    <a class="radius button small" href="{{ site.url }}/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language.next }} &raquo;</a>
+    {% endif %}
+  </nav>
+
 
 
 {% comment %}

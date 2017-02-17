@@ -11,7 +11,7 @@ format: blog-index
 
 
 <main role="main" id="content" class="row">
-    <div class="medium-8 medium-centered columns">
+    <div class="medium-8 columns t30">
 
     {% for post in site.posts limit:site.posts_with_teaser_limit %}
 
@@ -140,8 +140,8 @@ format: blog-index
 
 {% unless site.posts == empty %}
     <div class="row t30 b20 homepage">
-        <div class="small-12 columns">
-    {% for post in site.posts limit:site.posts_with_teaser_limit %}
+        <div class="medium-8 columns t30">
+            {% for post in site.posts limit:1 %}
             {% if post.image.homepage %}
             <p>
                 <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img width="970" src="{{ site.urlimg }}{{ post.image.homepage }}" alt="{{ page.title | escape_once }}"></a>

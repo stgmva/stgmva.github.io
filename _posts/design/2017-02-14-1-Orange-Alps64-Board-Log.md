@@ -14,7 +14,7 @@ header: no
 ---
 
 ```c
-#include "keymap_color-removed-all-fucking-die.h"
+#include "keymap_color-removed-added-image.h"
 
 /*
  * Hasu

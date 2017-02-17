@@ -25,7 +25,7 @@ author: Morgan Speck
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
 url: 'https://stgmva.github.io'
-baseurl: ''
+baseurl: '/mva'
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -45,7 +45,7 @@ paginate: 5
 
 
 # Pagination path › Important for blog page in /blog/ to work
-paginate_path: "blog/page:num"
+paginate_path: "/page:num"
 
 
 # Theme works best with Kramdown (using the table of contents function)

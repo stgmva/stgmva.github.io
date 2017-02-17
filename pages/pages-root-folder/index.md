@@ -44,9 +44,42 @@ permalink: /index.html
 homepage: true
 ---
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h1 class="post-title">{{ post.title }}</h1>
+
+	  {% if post.subtitle %}
+	  <h2 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h2>
+	  {% endif %}
+    </a>
+
+    <p class="post-meta">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+
+    <div class="post-entry">
+    {{ post.content }}
+    </div>
+
+   </article>
+  {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

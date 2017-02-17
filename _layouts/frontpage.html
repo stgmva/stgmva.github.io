@@ -1,6 +1,6 @@
 ---
 layout: default
-format: blog-index
+format: frontpage
 ---
 <div id="header-home">
     <div class="row">
@@ -8,87 +8,8 @@ format: blog-index
         </div><!-- /.medium-4.columns -->
     </div><!-- /.row -->
 </div><!-- /#header-home -->
-derp
-    <div class="medium-8 medium-centered columns">
 
-    {% for post in site.posts limit:2 %}
-
-            {% if post.video %}
-            <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
-            <iframe width="1280" height="720" src="{% if post.video contains 'youtu' %}https://www.youtube.com/embed/{{ post.video | remove: "https://www.youtube.com/watch?v=" | remove: "https://youtu.be/" }}{% elsif post.video contains 'vimeo.com' %}https://player.vimeo.com/video/{{ post.video | remove: "https://vimeo.com/" }}{% else %}{{ post.video }}{% endif %}{{ post.embed }}" frameborder="0" allowfullscreen></iframe>
-            </div>
-            {% endif %}
-
-
-            {% if post.embed %}
-            <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
-            {{ post.embed }}
-            </div>
-            {% endif %}
-
-
-            {% if post.video or post.embed %}
-            {% elsif post.image %}
-            <figure>
-                <a href="{{ post.url | absolute_url }}" title="{{ post.title | escape_once }}"><img src="{{ "/images/" | absolute_url }}{{ post.image }}" alt="{{ post.title | escape_once }}"></a>
-
-                {% if post.caption_url and post.caption %}
-                <figcaption>
-                    <a href="{{ post.caption_url }}">{{ post.caption }}</a>
-                </figcaption>
-                {% elsif post.caption %}
-                <figcaption>
-                    {{ post.caption }}
-                </figcaption>
-                {% endif %}
-            </figure>
-            {% endif %}
-
-
-            {% if post.link %}
-                <p class="subheadline">{{ post.subheadline }} Link</p>
-                <h1><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h1>
-                <p class="teaser">
-                    {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
-                    <a href="{{ post.link }}">Visit Link ›</a>
-                </p>
-            {% elsif post.quote %}
-                {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-                {% if post.quote_url %}
-                    <a href="{{ post.quote_url | absolute_url }}" target="_blank"><blockquote>{{ post.quote }}</blockquote></a>
-                {% else %}
-                    <blockquote>{{ post.quote }}</blockquote>
-                {% endif %}
-            {% else %}
-                {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-                <h1><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h1>
-                <p class="teaser">
-                    {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
-                    <a href="{{ post.url | absolute_url }}">{{ site.data.ui[site.lang].read_more }}</a>
-                </p>
-            {% endif %}
-
-        <div class="tem2 bem2">&nbsp;</div>
-    {% endfor %}
-</div>
-
-<nav id="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-      <a class="radius button small" href="{{ site.url }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
-      {% else %}
-      <a class="radius button small" href="{{ site.url }}/page{{ paginator.previous_page }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous }}</a>
-      {% endif %}
-    {% endif %}
-
-    <a class="radius button small" href="{{ site.url }}/archive/" title="{{ site.data.language.blog_archive }}">{{ site.data.language.blog_archive }}</a>
-
-    {% if paginator.next_page %}
-    <a class="radius button small" href="{{ site.url }}/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language.next }} &raquo;</a>
-    {% endif %}
-  </nav>
-
-
+{% include blog.html %}
 
 {% comment %}
 *
@@ -121,16 +42,72 @@ derp
 {% if page.callforaction.url contains 'http' %}
 {% assign url = '' %}
 {% else %}
-{% assign url = site.url %}
+{% capture url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
 {% endif %}
 {% if page.callforaction %}
     <div class="row t60 b60">
         <div class="small-12 text-center columns">
-            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ site.baseurl }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
+            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
         </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
 {% endif %}
 
+
+
+{% comment %}
+*
+* First check, if there are any posts at all
+*
+{% endcomment %}
+
+{% unless site.posts == empty %}
+    <div class="row t30 b20 homepage">
+        <div class="small-12 columns">
+            {% for post in site.posts limit:1 %}
+            {% if post.image.homepage %}
+            <p>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img width="970" src="{{ site.urlimg }}{{ post.image.homepage }}" alt="{{ page.title | escape_once }}"></a>
+            </p>
+
+            {% if post.image.caption_url and post.image.caption %}
+            <p class="text-right caption">
+                <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
+            </p>
+            {% endif %}
+            {% else post.image.homepage == NULL %}
+            <h2>{{ site.data.language.new_blog_entries }}</h2>
+            {% endif %}
+            {% endfor %}
+        </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <div class="row">
+        <div class="medium-6 columns">
+            {% for post in site.posts limit:1 %}
+            {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+            <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+            </p>
+            {% endfor %}
+        </div><!-- /.medium-5.columns -->
+
+
+        <div class="medium-6 columns">
+            <p><strong>{{ site.data.language.more_articles }}</strong></p>
+            {% include list-posts entries='3' offset='1' %}
+        </div><!-- /.medium-7.columns -->
+    </div><!-- /.row -->
+{% endunless %}
+
+
+{% comment %}
+*
+* Finally, if there is content, spit it out.
+*
+{% endcomment %}
 
 <div class="row">
     {{ content }}

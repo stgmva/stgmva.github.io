@@ -13,8 +13,10 @@ tags:
 header: no
 ---
 
+![](http://imgur.com/9pCXqKb.jpg)
+
 ```c
-#include "keymap_color-removed-added-image.h"
+#include "keymap_color-removed-added-image-on-top.h"
 
 /*
  * Hasu

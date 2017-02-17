@@ -4,7 +4,7 @@ layout: page
 # Content
 #
 subheadline: ""
-title: "Kinesis w/otop"
+title: "Kinesis w/top"
 teaser: "Alps Orange"
 categories:
   - design
@@ -13,7 +13,7 @@ tags:
 header: no"
 ---
 
-
+![](http://imgur.com/9pCXqKb.jpg)
 
 A few days I added a [Kinesis](https://www.kinesis-ergo.com/) Countoured Model 110 to my collection. The predecessor to the Advantage and the Advantage 2, this model is over 20 years old.
 

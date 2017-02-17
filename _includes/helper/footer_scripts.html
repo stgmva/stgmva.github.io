@@ -1,0 +1,17 @@
+{% if page.mediaplayer == true %}
+<script>
+$('audio,video').mediaelementplayer();
+</script>
+{% endif %}
+
+<script src="{{ 'assets/js/javascript.js' | absolute_url }}"></script>
+
+
+{% if site.google_analytics_tracking_id %}
+	{% include helper/google_analytics.html %}
+{% endif %}
+
+
+{% if site.tawkto_embed_uri and page.tawkto == true %}
+	{% include helper/tawk_to.html %}
+{% endif %}

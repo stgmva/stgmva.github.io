@@ -9,15 +9,7 @@ categories:
   - design
 tags:
   - design
-#
-# Styling
-#
-image:
-  header: ""
-  thumb: "you-can-delete-me-thumb.png"
-  homepage: "you-can-delete-me-homepage.png"
-  caption: "Caption?"
-  url: "http://phlow.de/"
+header: no
 ---
 
 > The new Touch Bar is often marketed as a gimmick, but one powerful capability it has is to function as a lockdown mechanism for your machine in the event of a physical breach. By changing a few power management settings and customizing the Touch Bar, you can add a button that will instantly lock the machine’s screen and then begin a countdown (that’s configurable, e.g. 5 minutes) to lock down the entire system, which will disable the fingerprint reader, remove power to the RAM, and discard your FileVault keys, effectively locking the encryption, protecting you from cold boot attacks, and prevent the system from being unlocked by a fingerprint.

@@ -9,15 +9,7 @@ categories:
   - design
 tags:
   - design
-#
-# Styling
-#
-image:
-  header: ""
-  thumb: "you-can-delete-me-thumb.png"
-  homepage: "you-can-delete-me-homepage.png"
-  caption: "Caption?"
-  url: "http://phlow.de/"
+header: no
 ---
 
 Intel's [Kaby Lake](https://en.wikipedia.org/wiki/Kaby_Lake) CPUs were ['officially'](http://www.anandtech.com/show/10959/intel-launches-7th-generation-kaby-lake-i7-7700k-i5-7600k-i3-7350k) launched today. Kaby Lake is a marked change from Intel's old Tick/Tock release schedule. They are instead moving to [Process/Architecture/Optimization.](http://www.anandtech.com/show/10183/intels-tick-tock-seemingly-dead-becomes-process-architecture-optimization) This 'optimization' release looks to offer few improvements over the 6th generation Skylake chips:

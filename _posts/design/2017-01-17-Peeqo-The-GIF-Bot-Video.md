@@ -9,15 +9,7 @@ categories:
   - design
 tags:
   - design
-#
-# Styling
-#
-image:
-  header: ""
-  thumb: "you-can-delete-me-thumb.png"
-  homepage: "you-can-delete-me-homepage.png"
-  caption: "Caption?"
-  url: "http://phlow.de/"
+header: no
 ---
 
 Following up on a [post]({{ site.baseurl }}/2016-12-10-Peeqo-The-GIF-Bot) from last month, the creator of [Peeqo](http://peeqo.com/) has created a video about his GIF bot.

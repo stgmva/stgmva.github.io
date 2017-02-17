@@ -1,14 +1,13 @@
 ---
 layout: default
-format: frontpage
+format: blog-index
 ---
 <div id="header-home">
     <div class="row">
         <div class="small-12 columns">
-        </div>
-    </div>
-</div>
-
+        </div><!-- /.medium-4.columns -->
+    </div><!-- /.row -->
+</div><!-- /#header-home -->
 
 <main role="main" id="content" class="row">
     <div class="medium-8 medium-centered columns">
@@ -73,47 +72,28 @@ format: frontpage
         <div class="tem2 bem2">&nbsp;</div>
     {% endfor %}
 
-
-        <h2>{{ site.data.ui[site.lang].more_articles }}</h2>
-        <ul class="toc">
-        {% for post in site.posts limit:site.posts_list_limit offset:site.posts_with_teaser_limit %}
-            {% if forloop.last %}
-                <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
-                <li class="text-right archive-link"><a href="{{ "/archive/" | absolute_url }}">{{ site.data.ui[site.lang].show_all_articles }}</a></li>
-                </ul>
-            {% else %}
-                <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-
-        {{ content }}
-    </div>
-</main><!-- /#content/.row -->
-
 {% comment %}
 *
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-{% assign widgets = site.data.widgets %}
-{% assign container_class = "medium-4 columns frontpage-widget" %}
-{% if widgets.size > 0 %}
-  {% for widget in widgets %}
-    {% assign loopindex = forloop.index | modulo: 3 %}
-    {% if loopindex == 1 %}
-      <div class="row t60">
-        {% include helper/widget.html widget=widget container_class=container_class %}
-    {% elsif forloop.last %}
-        {% include helper/widget.html widget=widget container_class=container_class %}
-      </div>
-    {% elsif loopindex == 2 %}
-        {% include helper/widget.html widget=widget container_class=container_class %}
-    {% else %}
-        {% include helper/widget.html widget=widget container_class=container_class %}
-      </div>
-    {% endif %}
-  {% endfor %}
-{% endif %}
+<div class="row t60">
+	{% if page.widget1.title %}
+		{% include _frontpage-widget.html widget=page.widget1 %}
+	{% endif %}
+
+
+	{% if page.widget2.title %}
+		{% include _frontpage-widget.html widget=page.widget2 %}
+	{% endif %}
+
+
+	{% if page.widget3.title %}
+		{% include _frontpage-widget.html widget=page.widget3 %}
+	{% endif %}
+</div><!-- /.row -->
+
+
 
 {% comment %}
 *
@@ -123,15 +103,17 @@ format: frontpage
 {% if page.callforaction.url contains 'http' %}
 {% assign url = '' %}
 {% else %}
-{% capture url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+{% assign url = site.url %}
 {% endif %}
 {% if page.callforaction %}
     <div class="row t60 b60">
         <div class="small-12 text-center columns">
-            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
-        </div>
-    </div>
+            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ site.baseurl }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
+        </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
 {% endif %}
+
+
 
 {% comment %}
 *
@@ -144,40 +126,43 @@ format: frontpage
         <div class="small-12 columns">
             {% for post in site.posts limit:1 %}
             {% if post.image.homepage %}
-            <figure>
-                <a href="{{ post.url | absolute_url }}" title="{{ post.title | escape_once }}"><img width="1200" src="{{ '/images/' | absolute_url }}{{ post.image.homepage }}" alt="{{ page.title | escape_once }}"></a>
+            <p>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img width="970" src="{{ site.urlimg }}{{ post.image.homepage }}" alt="{{ page.title | escape_once }}"></a>
+            </p>
 
             {% if post.image.caption_url and post.image.caption %}
-            <figcaption class="text-right caption">
+            <p class="text-right caption">
                 <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
-            </figcaption>
+            </p>
             {% endif %}
-            </figure>
             {% else post.image.homepage == NULL %}
-            <h2>{{ site.data.ui[site.lang].new_blog_entries | default: "New Blog Articles" }}</h2>
+            <h2>{{ site.data.language.new_blog_entries }}</h2>
             {% endif %}
             {% endfor %}
-        </div>
-    </div>
+        </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
 
     <div class="row">
         <div class="medium-6 columns">
-            {% for post in site.posts limit:1 %}
+            {% for post in site.posts limit:5 %}
             {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-            <h2 class="t0"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+            <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <p>
                 {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
-                <a href="{{ post.url | absolute_url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.ui[site.lang].read_more | default: "Read More&nbsp;›" }}</strong></a>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
             </p>
             {% endfor %}
-        </div>
+        </div><!-- /.medium-5.columns -->
+
 
         <div class="medium-6 columns">
-            <p class="sans">{{ site.data.ui[site.lang].more_articles | default: "More Articles" }}</p>
-            {% include list-posts entries='3' offset='1' %}
-        </div>
-    </div>
+            <p><strong>{{ site.data.language.more_articles }}</strong></p>
+            {% include list-posts entries='5' offset='1' %}
+        </div><!-- /.medium-7.columns -->
+    </div><!-- /.row -->
 {% endunless %}
+
 
 {% comment %}
 *
@@ -187,4 +172,4 @@ format: frontpage
 
 <div class="row">
     {{ content }}
-</div>
+</div><!-- /.row -->

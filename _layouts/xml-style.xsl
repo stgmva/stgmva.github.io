@@ -11,19 +11,19 @@ breadcrumbs: true
 	<html>
 	<head>
 		<xsl:text disable-output-escaping="yes"><![CDATA[
-		{% include helper/head.html %}
+		{% include _head.html %}
 		]]></xsl:text>
 	</head>
 	<body id="top-of-page">
 		<xsl:text disable-output-escaping="yes"><![CDATA[
-		{% include helper/navigation.html %}
-		{% include helper/masthead.html %}
+		{% include _navigation.html %}
+		{% include _masthead.html %}
 		{% include alert warning=page.disclaimer classes="text-center" %}
 		]]></xsl:text>
 		{{ content }}
 		<xsl:text disable-output-escaping="yes"><![CDATA[
-		{% include helper/footer.html %}
-		{% include helper/footer_scripts.html %}
+		{% include _footer.html %}
+		{% include _footer_scripts.html %}
 		]]></xsl:text>
 	</body>
 	</html>

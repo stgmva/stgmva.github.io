@@ -5,4 +5,24 @@ teaser: "This is the Feeling Responsive Blog Template."
 header:
     image_fullwidth: "header-bus.jpg"
 ---
-derp
+
+{% comment %}
+*
+* First check, if widget is empty or not by checking if there is a title
+*
+{% endcomment %}
+<div class="row t60">
+	{% if page.widget1.title %}
+		{% include _frontpage-widget.html widget=page.widget1 %}
+	{% endif %}
+
+
+	{% if page.widget2.title %}
+		{% include _frontpage-widget.html widget=page.widget2 %}
+	{% endif %}
+
+
+	{% if page.widget3.title %}
+		{% include _frontpage-widget.html widget=page.widget3 %}
+	{% endif %}
+</div><!-- /.row -->

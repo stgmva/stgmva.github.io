@@ -9,85 +9,68 @@ format: blog-index
     </div><!-- /.row -->
 </div><!-- /#header-home -->
 
+<div class="row t30">
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				{% if page.image.title %}
+				<figure>
+					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
 
-<main role="main" id="content" class="row">
-    <div class="medium-8 columns t30">
+					{% if page.image.caption_url and page.image.caption %}
+					<figcaption class="text-right">
+						<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+					</figcaption>
+					{% elsif page.image.caption %}
+					<figcaption class="text-right">
+						{{ page.image.caption }}
+					</figcaption>
+					{% endif %}
+				</figure>
+				{% endif %}
 
-    {% for post in site.posts limit:site.posts_with_teaser_limit %}
-
-            {% if post.video %}
-            <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
-            <iframe width="1280" height="720" src="{% if post.video contains 'youtu' %}https://www.youtube.com/embed/{{ post.video | remove: "https://www.youtube.com/watch?v=" | remove: "https://youtu.be/" }}{% elsif post.video contains 'vimeo.com' %}https://player.vimeo.com/video/{{ post.video | remove: "https://vimeo.com/" }}{% else %}{{ post.video }}{% endif %}{{ post.embed }}" frameborder="0" allowfullscreen></iframe>
-            </div>
-            {% endif %}
-
-
-            {% if post.embed %}
-            <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
-            {{ post.embed }}
-            </div>
-            {% endif %}
-
-
-            {% if post.video or post.embed %}
-            {% elsif post.image %}
-            <figure>
-                <a href="{{ post.url | absolute_url }}" title="{{ post.title | escape_once }}"><img src="{{ "/images/" | absolute_url }}{{ post.image }}" alt="{{ post.title | escape_once }}"></a>
-
-                {% if post.caption_url and post.caption %}
-                <figcaption>
-                    <a href="{{ post.caption_url }}">{{ post.caption }}</a>
-                </figcaption>
-                {% elsif post.caption %}
-                <figcaption>
-                    {{ post.caption }}
-                </figcaption>
-                {% endif %}
-            </figure>
-            {% endif %}
+				<span itemprop="name">
+					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+					<h1>{{ page.title }}</h1>
+				</span>
+			</header>
 
 
-            {% if post.link %}
-                <p class="subheadline">{{ post.subheadline }} Link</p>
-                <h1><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h1>
-                <p class="teaser">
-                    {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
-                    <a href="{{ post.link }}">Visit Link ›</a>
-                </p>
-            {% elsif post.quote %}
-                {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-                {% if post.quote_url %}
-                    <a href="{{ post.quote_url | absolute_url }}" target="_blank"><blockquote>{{ post.quote }}</blockquote></a>
-                {% else %}
-                    <blockquote>{{ post.quote }}</blockquote>
-                {% endif %}
-            {% else %}
-                {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-                <h1><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h1>
-                <p class="teaser">
-                    {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
-                    <a href="{{ post.url | absolute_url }}">{{ site.data.ui[site.lang].read_more }}</a>
-                </p>
-            {% endif %}
+			{% if page.teaser %}
+			<p class="teaser" itemprop="description">
+				{{ page.teaser }}
+			</p>
+			{% endif %}
 
-        <div class="tem2 bem2">&nbsp;</div>
-    {% endfor %}
+			<span itemprop="articleSection">
+			{{ content }}
+			</span>
+
+			{% if page.show_meta == true %}
+			{% include _meta_information.html %}
+			{% endif %}
+
+			{% if page.comments == true %}
+			{% include _comments.html %}
+			{% endif %}
+		</article>
+	</div><!-- /.medium-8.columns -->
 
 
-        <h2>{{ site.data.ui[site.lang].more_articles }}</h2>
-        <ul class="toc">
-        {% for post in site.posts limit:site.posts_list_limit offset:site.posts_with_teaser_limit %}
-            {% if forloop.last %}
-                <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
-                <li class="text-right archive-link"><a href="{{ "/archive/" | absolute_url }}">{{ site.data.ui[site.lang].show_all_articles }}</a></li>
-                </ul>
-            {% else %}
-                <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
-            {% endif %}
-        {% endfor %}
+	{% if page.sidebar == "left" %}
+	<div class="medium-4 columns medium-pull-8">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
 
-        {{ content }}
-    </div>
+
+	{% if page.sidebar == "right" %}
+	<div class="medium-4 columns">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+</div><!-- /.row -->
+
 
 {% comment %}
 *
@@ -140,7 +123,7 @@ format: blog-index
 
 {% unless site.posts == empty %}
     <div class="row t30 b20 homepage">
-        <div class="medium-8 columns t30">
+        <div class="small-12 columns">
             {% for post in site.posts limit:1 %}
             {% if post.image.homepage %}
             <p>

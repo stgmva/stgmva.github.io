@@ -33,12 +33,16 @@ slogan        : 'A Minimalistic Jekyll Theme'
 lang: "en"
 
 # Build settings
-url           : 'https://phlow.github.io'
-baseurl       : '/simplicity'
+url           : 'https://stgmva.github.io'
+baseurl       : '/'
 markdown      : kramdown
 highlighter   : rouge
 permalink     : /:categories/:title/
 encoding      : utf-8
+
+# Main author of the website
+# See > authors.yml
+author: Morgan
 
 
 # Frontpage-Layout-Settings
@@ -200,7 +204,7 @@ sass:
 #
 # used in _includes/_4_footer_scripts
 
-# google_analytics_tracking_id: 
+# google_analytics_tracking_id:
 
 
 
@@ -263,4 +267,3 @@ compress_html:
   profile: false
   ignore:
     envs: [development]
-

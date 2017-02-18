@@ -27,5 +27,5 @@
 {% endcomment %}
 {% for entry in include %}
 {% if entry[0] == 'classes' %}{% continue %}{% endif %}
-<div class="alert-box {{ entry[0] }} {{ include.classes }}">{% if entry[0] contains 'terminal' %}{{ entry[1] }}{% else %}{{ entry[1] | markdownify }}{% endif %}</div>
+<div class="alert-box {{ entry[0] }} {{ include.classes }}">{{ entry[1] | markdownify }}</div>
 {% endfor %}

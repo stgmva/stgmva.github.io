@@ -1,11 +1,12 @@
 ---
-title: Contact
-permalink: /contact/
+layout: page
+title: "Contact"
+meta_title: "Contact and use our contact form"
+subheadline: "Wufoo-powered contact forms"
+teaser: "Get in touch with me? Use the contact form."
+permalink: "/contact/"
 ---
-To use a contact form along with *Simplicity*, I suggest…
+If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
 
-…you use one of the following services. They all have a free plan. My first choice would be Wufoo.
 
-- [Wufoo](http://www.wufoo.com/)
-- [formspree.io](http://formspree.io/)
-- [Google Forms](https://www.google.de/intl/en/forms/about/)
+ [1]: http://www.wufoo.com/

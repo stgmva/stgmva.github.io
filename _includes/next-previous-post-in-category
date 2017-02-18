@@ -1,14 +1,20 @@
 {% comment %}
 *
-*   This include creates a next/previous link to a post of the same category
-*   using the categories-variable in front matter.
+* This include creates a next/previous link to a post of the same category
+* using the categories-variable in front matter.
 *
-*   Use ›  {% include next-previous-post-in-category %}
-*
-*   assign FIRST category from categories variable from front matter to cat
-*   and make a string from the array by using › join: ''
+* Use ›  {% include next-previous-post-in-category %}
 *
 {% endcomment %}
+
+
+{% comment %}
+*
+* assign FIRST category from categories variable from front matter to cat
+* and make a string from the array by using › join: ''
+*
+{% endcomment %}
+
 {% assign cat = page.categories | first | join: '' %}
 {% for post in site.categories.[cat] %}
 {% if post.url == page.url %}
@@ -24,10 +30,10 @@
 {% assign prev_post = post.url %}
 {% endif %}
 {% endfor %}
-{% if next_post %}
-<a class="left button tiny radius icon-chevron-left r15" href="{{ next_post }}">{{ site.data.ui[site.lang].next_post_in }} {{ cat | upcase }}</a>
-{% endif %}
 {% if prev_post %}
-<a class="button tiny radius" href="{{ prev_post }}">{{ site.data.ui[site.lang].previous_post_in }} {{ cat | upcase }}<span class="icon-chevron-right"></span></a>
+<a class="left button tiny radius icon-chevron-left r15" href="{{site.url}}{{site.baseurl}}{{ prev_post }}">{{ site.data.language.previous_post_in }} {{ cat | upcase }}</a>
+{% endif %}
+{% if next_post %}
+<a class="button tiny radius" href="{{site.url}}{{site.baseurl}}{{ next_post }}">{{ site.data.language.next_post_in }} {{ cat | upcase }}<span class="icon-chevron-right"></span></a>
 {% endif %}
 

@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'sTG2'
+title: 'stg3'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'A Flexible Theme for Jekyll'
@@ -59,7 +59,7 @@ gems:
 #               /____/
 #
 paginate: 5                      # Paginates all X entries
-
+paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
 
 
 # Theme works best with Kramdown (using the table of contents function)

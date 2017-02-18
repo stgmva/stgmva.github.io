@@ -48,7 +48,7 @@ urlimg: 'https://stgmva.github.io/images/'
 #               /____/
 #
 paginate: 5                      # Paginates all X entries
-paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
+
 
 # Logo size is 600x80 pixels
 logo: "logo.png"

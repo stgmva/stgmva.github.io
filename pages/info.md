@@ -1,54 +1,61 @@
 ---
-subheadline: 'Info'
-title: 'Why I designed *Simplicity*'
-permalink: /info/
+layout: page
+title: "About"
+subheadline: "Why another Jekyll Theme?"
+teaser: "Since years I am programming and designing websites. I love to work with open source tools and learn via code from others. This time I want to try to give something back..."
+permalink: "/info/"
+header:
+    image_fullwidth: "header_drop.jpg"
 ---
-The idea behind *Simplicity* is to build a theme which is elegant, ver&shy;satile but still fast, without any clutter and the pur&shy;pose to make blogging and publishing as easy as possible.
+...and learn at the same time.
 
-<!--more-->
-
-While sketching *Simplicity* I asked myself: »How much can I strip down from a post. How much [front matter][3] is truly needed?« And the answer is really simple: For pages or posts you need **no front matter at all**. You create a file, name it and Jekyll uses the file name automatically if you don't add `title` to front matter.
+*Feeling Responsive* is my first theme which I let into the world. It's built on work and knowledge of others. While I am still designing it, you read about whats behind this theme in the – *hopefully* – near future.
 
 
-## *Simplicity* chooses the layout for you
+## Features
 
-And because you can define the default-layout in *_config.yml*. You don't need to add *title:* to front matter either. But what makes this theme truly elegant is, that if you need some tasty video on top of your posting or a nice image, you do it like this…
-
-{% highlight html %}
----
-youtube: https://www.youtube.com/watch?v=8pQAWOCofXo
----
-{% endhighlight %}
-
-or that…
-
-{% highlight html %}
-image: image-on-top-of-post.jpg
-{% endhighlight %}
-
-The layout figures out what to do :)
-
-And if you are a blogger who enjoys spicing up his posts, there are plenty of possibilities. Maybe like this?!?
-
-{% highlight html %}
-subheadline:    I love'em
-title:          Your Title
-header_image:   amazing_header_image.jpg
-comments:       true
-show_meta:      true
-embed:          <iframe>…</iframe>
-{% endhighlight %}
-
-For more options, [download *Simplicity*][4] and check out its well-documented templates, includes and layout-options.
-
-All the best from [Cologne][1], [Moritz »mo.« Sauer][2]
+* [Responsive Gallery][8], [Videos][9], [Grid][10], [Typography][11],...
+* 100% GitHub Pages friendly
+* Easy editable navigation, footer and social media links
+* Language Ready – just translate one file.
+* Lots of possibilities to customize it to your needs
+* Lots of different headers
+* Various post formats to let your content shine
+* Uses Jekyll 3.0
+* Multiple possibilities to use images in different ways
+* Fine typography
+* Play Video and Audio with [Mediaelement.js][12]
 
 
 
+## I got inspired by...
+
+[Michael Rose][1] and his fabulous [themes for jekyll][2]. Authors of [A List Apart][4] and [Smashing Magazine][5] since 2002. [GitHub][6] and how they built such a habitat for cooperation worldwide. [Automattic][3] and how they built a fantastic community around WordPress. And many, many more...
+
+Please make *Feeling Responsive* yours and if you like it, please link back to my homebase <a href="http://phlow.de/">Phlow</a>. That would be awesome.
+
+#### Since then, fork it!
+
+Yours sincerelly, [Moritz »mo.« Sauer][7]
 
 
-
-[1]: https://www.google.de/maps/place/K%C3%B6lner+Dom/@38.5398373,2.1154583,4z/data=!3m1!5s0x47bf25baabc20433:0x312b7d4db7d02b48!4m2!3m1!1s0x47bf25a5369c3d2f:0x29ec913896e3a9c6
-[2]: http://moritz.sauer.io
-[3]: https://jekyllrb.com/docs/frontmatter/
-[4]: https://github.com/Phlow/simplicity
+ [1]: http://mademistakes.com/about/
+ [2]: http://mademistakes.com/work/jekyll-themes/
+ [3]: http://automattic.com/
+ [4]: http://alistapart.com/
+ [5]: http://www.smashingmagazine.com/
+ [6]: https://github.com/
+ [7]: http://sauer.io
+ [8]: {{ site.url }}/design/gallery/
+ [9]: {{ site.url }}/design/video/
+ [10]: {{ site.url }}/design/grid/
+ [11]: {{ site.url }}/design/typography/
+ [12]: {{ site.url }}/design/mediaelement_js/
+ [13]: #
+ [14]: #
+ [15]: #
+ [16]: #
+ [17]: #
+ [18]: #
+ [19]: #
+ [20]: #

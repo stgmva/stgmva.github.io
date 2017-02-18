@@ -11,7 +11,7 @@ format: frontpage
 <main role="main" id="content" class="row">
     <div class="medium-8 medium-centered columns">
 
-    {% for post in site.posts limit:site.posts_with_teaser_limit %}
+    {% for post in site.posts limit:2}
 
             {% if post.video %}
             <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">

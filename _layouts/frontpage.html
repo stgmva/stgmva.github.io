@@ -3,83 +3,81 @@ layout: default
 format: frontpage
 ---
 <main role="main" id="content" class="row">
-  <div class="medium-8 medium-centered columns">
+    <div class="medium-8 medium-centered columns">
 
-  {% for post in site.posts limit:2 %}
+    {% for post in site.posts limit:site.posts_with_teaser_limit %}
 
-          {% if post.video %}
-          <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
-          <iframe width="1280" height="720" src="{% if post.video contains 'youtu' %}https://www.youtube.com/embed/{{ post.video | remove: "https://www.youtube.com/watch?v=" | remove: "https://youtu.be/" }}{% elsif post.video contains 'vimeo.com' %}https://player.vimeo.com/video/{{ post.video | remove: "https://vimeo.com/" }}{% else %}{{ post.video }}{% endif %}{{ post.embed }}" frameborder="0" allowfullscreen></iframe>
-          </div>
-          {% endif %}
-
-
-          {% if post.embed %}
-          <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
-          {{ post.embed }}
-          </div>
-          {% endif %}
+            {% if post.video %}
+            <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
+            <iframe width="1280" height="720" src="{% if post.video contains 'youtu' %}https://www.youtube.com/embed/{{ post.video | remove: "https://www.youtube.com/watch?v=" | remove: "https://youtu.be/" }}{% elsif post.video contains 'vimeo.com' %}https://player.vimeo.com/video/{{ post.video | remove: "https://vimeo.com/" }}{% else %}{{ post.video }}{% endif %}{{ post.embed }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% endif %}
 
 
-          {% if post.video or post.embed %}
-          {% elsif post.image %}
-          <figure>
-              <a href="{{ post.url | absolute_url }}" title="{{ post.title | escape_once }}"><img src="{{ "/images/" | absolute_url }}{{ post.image }}" alt="{{ post.title | escape_once }}"></a>
-
-              {% if post.caption_url and post.caption %}
-              <figcaption>
-                  <a href="{{ post.caption_url }}">{{ post.caption }}</a>
-              </figcaption>
-              {% elsif post.caption %}
-              <figcaption>
-                  {{ post.caption }}
-              </figcaption>
-              {% endif %}
-          </figure>
-          {% endif %}
+            {% if post.embed %}
+            <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
+            {{ post.embed }}
+            </div>
+            {% endif %}
 
 
-          {% if post.link %}
-              <p class="subheadline">{{ post.subheadline }} Link</p>
-              <h1><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h1>
-              <p class="teaser">
-                  {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
-                  <a href="{{ post.link }}">Visit Link ›</a>
-              </p>
-          {% elsif post.quote %}
-              {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-              {% if post.quote_url %}
-                  <a href="{{ post.quote_url | absolute_url }}" target="_blank"><blockquote>{{ post.quote }}</blockquote></a>
-              {% else %}
-                  <blockquote>{{ post.quote }}</blockquote>
-              {% endif %}
-          {% else %}
-              {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-              <h1><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h1>
-              <p class="teaser">
-                  {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
-                  <a href="{{ post.url | absolute_url }}">{{ site.data.ui[site.lang].read_more }}</a>
-              </p>
-          {% endif %}
+            {% if post.video or post.embed %}
+            {% elsif post.image %}
+            <figure>
+                <a href="{{ post.url | absolute_url }}" title="{{ post.title | escape_once }}"><img src="{{ "/images/" | absolute_url }}{{ post.image }}" alt="{{ post.title | escape_once }}"></a>
 
-      <div class="tem2 bem2">&nbsp;</div>
-  {% endfor %}
-</div>
+                {% if post.caption_url and post.caption %}
+                <figcaption>
+                    <a href="{{ post.caption_url }}">{{ post.caption }}</a>
+                </figcaption>
+                {% elsif post.caption %}
+                <figcaption>
+                    {{ post.caption }}
+                </figcaption>
+                {% endif %}
+            </figure>
+            {% endif %}
 
-<nav id="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    <a class="radius button small" href="{{ site.url }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
-    {% else %}
-    <a class="radius button small" href="{{ site.url }}/page{{ paginator.previous_page }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous }}</a>
-    {% endif %}
-  {% endif %}
 
-  <a class="radius button small" href="{{ site.url }}/archive/" title="{{ site.data.language.blog_archive }}">{{ site.data.language.blog_archive }}</a>
+            {% if post.link %}
+                <p class="subheadline">{{ post.subheadline }} Link</p>
+                <h1><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h1>
+                <p class="teaser">
+                    {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
+                    <a href="{{ post.link }}">Visit Link ›</a>
+                </p>
+            {% elsif post.quote %}
+                {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+                {% if post.quote_url %}
+                    <a href="{{ post.quote_url | absolute_url }}" target="_blank"><blockquote>{{ post.quote }}</blockquote></a>
+                {% else %}
+                    <blockquote>{{ post.quote }}</blockquote>
+                {% endif %}
+            {% else %}
+                {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+                <h1><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h1>
+                <p class="teaser">
+                    {{ post.excerpt  | replace: '<p>', '' | replace: '</p>', ''}}
+                    <a href="{{ post.url | absolute_url }}">{{ site.data.ui[site.lang].read_more }}</a>
+                </p>
+            {% endif %}
 
-  {% if paginator.next_page %}
-  <a class="radius button small" href="{{ site.url }}/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language.next }} &raquo;</a>
-  {% endif %}
-</nav>
+        <div class="tem2 bem2">&nbsp;</div>
+    {% endfor %}
 
+
+        <h2>{{ site.data.ui[site.lang].more_articles }}</h2>
+        <ul class="toc">
+        {% for post in site.posts limit:site.posts_list_limit offset:site.posts_with_teaser_limit %}
+            {% if forloop.last %}
+                <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
+                <li class="text-right archive-link"><a href="{{ "/archive/" | absolute_url }}">{{ site.data.ui[site.lang].show_all_articles }}</a></li>
+                </ul>
+            {% else %}
+                <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+
+        {{ content }}
+    </div>
 </main><!-- /#content/.row -->

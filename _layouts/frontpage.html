@@ -2,43 +2,10 @@
 layout: default
 format: frontpage
 ---
-<div id="header-home">
-    <div class="row">
-        <div class="small-12 columns">
-        </div><!-- /.medium-4.columns -->
-    </div><!-- /.row -->
-</div><!-- /#header-home -->
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h1 class="post-title">{{ post.title }}</h1>
-
-	  {% if post.subtitle %}
-	  <h2 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h2>
-	  {% endif %}
-    </a>
-
-    <p class="post-meta">
-      {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-
-    <div class="post-entry">
-    {{ post.content }}
-    </div>
-
-   </article>
-  {% endfor %}
-</div>
-
-
 
   <div class="medium-8 medium-centered columns">
 
-  {% for post in site.posts limit:site.posts_with_teaser_limit %}
+  {% for post in site.posts limit:2 %}
 
           {% if post.video %}
           <div{% if post.embed_height %} style="padding-bottom: {{ post.embed_height }}"{% endif %} class="flex-video">
@@ -98,11 +65,32 @@ format: frontpage
       <div class="tem2 bem2">&nbsp;</div>
   {% endfor %}
 
-  <div class="row">
-  	<div class="medium-8 columns t30">
-  		{% include _pagination.html %}
-  	</div><!-- /.medium-7.columns -->
-    
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% elsif page == 1 %}
+        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+
 {% comment %}
 *
 * First check, if widget is empty or not by checking if there is a title

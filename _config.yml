@@ -25,7 +25,7 @@
 
 
 # Title and description of your site
-title         : 'Simplicity'
+title         : 'STG7'
 description   : 'Simplicity is a fast and easy to use jekyll theme for minimalists concentrating on elegance and flexibility.'
 slogan        : 'A Minimalistic Jekyll Theme'
 
@@ -33,8 +33,8 @@ slogan        : 'A Minimalistic Jekyll Theme'
 lang: "en"
 
 # Build settings
-url           : 'https://phlow.github.io'
-baseurl       : '/simplicity'
+url           : 'https://stgmva.github.io'
+baseurl       : ''
 markdown      : kramdown
 highlighter   : rouge
 permalink     : /:categories/:title/
@@ -200,7 +200,7 @@ sass:
 #
 # used in _includes/_4_footer_scripts
 
-# google_analytics_tracking_id: 
+# google_analytics_tracking_id:
 
 
 
@@ -263,4 +263,3 @@ compress_html:
   profile: false
   ignore:
     envs: [development]
-

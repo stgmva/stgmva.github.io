@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: post-fullwidth
 title: "Wonderful Typography"
 subheadline: "Reading Experience"
 meta_teaser: "Feeling Responsive uses Volkhov for headlines, Lato for everything else and if you are in need to show some code, it will be in Lucida Console."

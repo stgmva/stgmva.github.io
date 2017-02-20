@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-FR
 sidebar: right
 subheadline: Templates
 title:  "Page/Post Right Sidebar"

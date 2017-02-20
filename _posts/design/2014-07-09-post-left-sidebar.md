@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-FR
 sidebar: left
 subheadline: Templates
 title:  "Page/Post With Left Sidebar"

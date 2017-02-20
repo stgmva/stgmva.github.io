@@ -19,6 +19,15 @@ title: Missouri Valley Ambulance
 # Short description of your site
 description:
 
+
+# This URL points directly to the images directory making
+# things easier to link to images in posts and templates. It needs a slash at the end.
+#
+# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+#
+urlimg: 'https://stgmva.github.io/images/'
+
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -82,6 +91,17 @@ defaults:
       path: "" # all files
     values:
       layout: "default"
+
+#      _____
+#     / ___/____ ___________
+#     \__ \/ __ `/ ___/ ___/
+#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
+#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
+#
+
+sass:
+    sass_dir: _sass
+    style: :compressed
 
 # Exclude these files from production site
 exclude:

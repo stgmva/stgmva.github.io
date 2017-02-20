@@ -1,6 +1,6 @@
 ---
 layout: default
-format: post-fullwidth
+format: page-fullwidth
 ---
 {% if page.image.title %}
 <div class="row t30">
@@ -35,19 +35,4 @@ format: post-fullwidth
 	</div><!-- /.medium-12.columns -->
 </div><!-- /.row -->
 
-<div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <ul class="pager blog-pager">
-      {% if page.previous.url %}
-      <li class="previous">
-        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-      </li>
-      {% endif %}
-      {% if page.next.url %}
-      <li class="next">
-        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-      </li>
-      {% endif %}
-    </ul>
-  </div>
-</div>
+

@@ -11,14 +11,6 @@ baseurl: ""
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
-# This URL points directly to the images directory making
-# things easier to link to images in posts and templates. It needs a slash at the end.
-#
-# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
-# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
-#
-urlimg: 'https://stgmva.github.io/images/'
-
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
@@ -38,9 +30,6 @@ navbar-links:
   Home: ""
   Projects: "projects"
   About Me: "aboutme"
-
-
-
 
 # --- Footer options --- #
 
@@ -64,7 +53,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: ""  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "stgmva.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -77,7 +66,7 @@ url-pretty: ""  # eg. "deanattali.com/beautiful-jekyll"
 timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
-permalink: /:categories/:year-:month-:day-:title
+permalink: /:year-:month-:day-:title
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
@@ -93,18 +82,6 @@ defaults:
       path: "" # all files
     values:
       layout: "default"
-
-
-#      _____
-#     / ___/____ ___________
-#     \__ \/ __ `/ ___/ ___/
-#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
-#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
-#
-
-sass:
-    sass_dir: _sass
-    style: :compressed
 
 # Exclude these files from production site
 exclude:

@@ -4,12 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "http://stgmva.github.io"
+url: "http://missourivalleyambulance.github.io"
 baseurl: ""
-
-
-#images URL
-urlimg: 'https://stgmva.github.io/images/'
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -35,6 +31,15 @@ navbar-links:
   Projects: "projects"
   About Me: "aboutme"
 
+  # This URL points directly to the images directory making
+  # things easier to link to images in posts and templates. It needs a slash at the end.
+  #
+  # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
+  # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+  #
+  urlimg: 'https://stgmva.github.io/images/'
+
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
@@ -57,7 +62,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "stgmva.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "missourivalleyambulance.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -70,7 +75,7 @@ url-pretty: "stgmva.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title
+permalink: /:categories/:year-:month-:day-:title
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
@@ -86,6 +91,18 @@ defaults:
       path: "" # all files
     values:
       layout: "default"
+
+
+#      _____
+#     / ___/____ ___________
+#     \__ \/ __ `/ ___/ ___/
+#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
+#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
+#
+
+sass:
+    sass_dir: _sass
+    style: :compressed
 
 # Exclude these files from production site
 exclude:

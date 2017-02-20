@@ -11,6 +11,14 @@ baseurl: ""
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
+# This URL points directly to the images directory making
+# things easier to link to images in posts and templates. It needs a slash at the end.
+#
+# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+#
+urlimg: 'https://stgmva.github.io/images/'
+
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
@@ -31,13 +39,7 @@ navbar-links:
   Projects: "projects"
   About Me: "aboutme"
 
-  # This URL points directly to the images directory making
-  # things easier to link to images in posts and templates. It needs a slash at the end.
-  #
-  # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
-  # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
-  #
-  urlimg: 'https://stgmva.github.io/images/'
+
 
 
 # --- Footer options --- #

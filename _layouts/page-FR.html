@@ -27,7 +27,7 @@ format: post
 					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
 				</div>
 			</header>
-
+<br>
 
 			{% if page.teaser %}
 			<p class="teaser" itemprop="description">
@@ -43,9 +43,7 @@ format: post
 			{% include _meta_information.html %}
 			{% endif %}
 
-			{% if page.comments == true %}
-			{% include _comments.html %}
-			{% endif %}
+
 		</article>
 		<div class="row">
 		  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

@@ -21,14 +21,14 @@ format: page-fullwidth
 		<article>
 			<header>
 				<h1>{{ page.title }}</h1>
-				{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+								{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
 			</header>
 
 			{% if page.teaser %}
 			<p class="teaser">
 				{{ page.teaser }}
 			</p>
-
+			{% endif %}
 
 			{{ content }}
 		</article>

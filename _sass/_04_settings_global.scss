@@ -1714,7 +1714,7 @@ border-width: 0 0 1px;
   }
 
 
-  navbar-toggle {
+  .navbar-toggle {
     position: relative;
     float: right;
     padding: 9px 10px;
@@ -1741,4 +1741,5 @@ border-width: 0 0 1px;
   @media (min-width: 768px) {
     .navbar-toggle {
       display: none;
-    }}
+    }
+  }

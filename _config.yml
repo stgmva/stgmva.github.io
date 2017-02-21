@@ -34,7 +34,10 @@ urlimg: "/images/"
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 
-
+navbar-links:
+  Home: ""
+  Projects: "projects"
+  About Me: "aboutme"
 
 
 # --- Footer options --- #

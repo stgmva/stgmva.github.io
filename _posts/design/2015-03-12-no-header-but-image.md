@@ -1,5 +1,5 @@
 ---
-layout: page-FR
+layout: page-FR-FR
 subheadline:  "Headers With Style"
 title:  "No Header but Article Derp"
 teaser: "Feeling Responsive enables you to get the attention of visitors. If you don't want to use a big header, use an image for the article instead."

@@ -9,17 +9,8 @@ subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Appl
   <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h1 class="post-title">{{ post.title }}</h1>
-    {% if post.image.homepage %}
-    <p>
-        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img width="970" src="{{ site.urlimg }}{{ post.image.homepage }}" alt="{{ page.title | escape_once }}"></a>
-    </p>
+    {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title escape_once }}"><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150" alt="{{ page.title escape_once }}"></a>{% endif %}
 
-    {% if post.image.caption_url and post.image.caption %}
-    <p class="text-right caption">
-        <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
-    </p>
-    {% endif %}
-    {% else post.image.homepage == NULL %}
 	  {% if post.subtitle %}
 	  <h2 class="post-subtitle">
 	    {{ post.subtitle }}

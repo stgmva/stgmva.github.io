@@ -3,13 +3,12 @@
   side: left
 
 - title: "Projects"
-  url: "#"
+  url: "/projects/"
   side: right
   dropdown:
-  - title: "All Projects"
-    url: "/projects"
   - title: "ErgoDox"
-    url: "Ergodox_Omnibus"
+    url: "/Ergodox_Omnibus/"
+
 - title: "About"
   url: "/aboutme"
   side: right

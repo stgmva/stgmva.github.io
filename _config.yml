@@ -26,7 +26,7 @@ description:
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://stgmva.github.io/images/'
+urlimg: 'http://stgmva.github.io/images/'
 
 # --- Navigation bar options --- #
 

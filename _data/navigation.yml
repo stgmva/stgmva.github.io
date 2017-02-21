@@ -7,11 +7,7 @@
   side: left
   dropdown:
   - title: "ErgoDox"
-    url: "Ergodox-Omnibus"
-
-- title: "Projects"
-  url: "/projects"
-  side: right
+    url: "Ergodox_Omnibus"
 
 - title: "About"
   url: "/about"

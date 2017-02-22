@@ -1,7 +1,7 @@
 ---
 layout: home
-title: MVASTAGE
-subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Apple, always tech.
+title: MISSOURI VALLEY AMBULANCE
+subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Apple, always tech. 
 ---
 
 <div class="posts">
@@ -9,7 +9,6 @@ subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Appl
   <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h1 class="post-title">{{ post.title }}</h1>
-    {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title escape_once }}"><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150" alt="{{ page.title escape_once }}"></a>{% endif %}
 
 	  {% if post.subtitle %}
 	  <h2 class="post-subtitle">
@@ -29,8 +28,7 @@ subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Appl
    </article>
   {% endfor %}
 </div>
-<br>
-<br>
+
 {% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">
   {% if paginator.previous_page %}

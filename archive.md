@@ -5,7 +5,6 @@ teaser: "Click on a headline to read the teaser."
 breadcrumb: true
 header:
    image_fullwidth: you-can-delete-me-header.png
-permalink: "blog/archive/"
 ---
 <div id="blog-index" class="row">
 	<div class="small-12 columns t30">

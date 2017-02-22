@@ -1,5 +1,5 @@
 @import url("pygment_highlights.css");
 
-@import url("mva.css");
+@import url("/_sass.mva.scss");
 
 @import url("/_sass/mvamain.scss")

@@ -1,5 +1,5 @@
 ---
-layout: page-FR-fullwidth
+layout: page-fullwidth
 title: "Show your beautiful work!"
 subheadline: "Portfolio"
 teaser: "With <em>Feeling Responsive</em> you don't need a special portfolio template. Just check out the great possibilities of the <a href='http://foundation.zurb.com/docs/components/grid.html'>foundation grid</a> and experiment with it."
@@ -37,4 +37,3 @@ categories:
         <p>Website: <a href="http://www.psychotherapie-schriefer.de/">Praxis für psychologische Psychotherapie Simone Schriefer</a></p>
     </div><!-- /.medium-4.columns -->
 </div><!-- /.row -->
-

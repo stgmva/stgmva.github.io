@@ -1,5 +1,5 @@
 ---
-layout: page-FR
+layout: page
 #
 # Content
 #

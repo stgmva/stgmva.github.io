@@ -1,9 +1,9 @@
 ---
 layout: home
 title: MVASTAGE
-subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Apple, always tech.
 ---
 
+<center><h2> The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes, Apple, always tech.</h2></center><br>
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
@@ -16,6 +16,11 @@ subtitle: The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes Appl
 	    {{ post.subtitle }}
 	  </h2>
 	  {% endif %}
+    {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
+    <p>
+        {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+    </p>
     </a>
 
     <p class="post-meta">

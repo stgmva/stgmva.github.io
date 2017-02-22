@@ -9,21 +9,14 @@
   url: "/archive"
   side: right
 
+- title: Projects
+  url: "/projects"
+  side: right
+  dropdown:
+  - title: "ErgoDox"
+    url: "/Ergodox_Omnibus"
+
+
 - title: About
   url: "/aboutme"
-  side: right
-
-#
-#   Navigation to the right › side: right
-#
-- title: "Info"
-  url: "/info/"
-  side: right
-
-- title: "Search"
-  url: "/search/"
-  side: right
-
-- title: "Contact"
-  url: "/contact/"
   side: right

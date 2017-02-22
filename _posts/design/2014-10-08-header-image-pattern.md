@@ -1,5 +1,5 @@
 ---
-layout: page-FR
+layout: page
 title:  "Header Image With Pattern"
 subheadline:  "Headers With Style"
 teaser: "Feeling Responsive allows you to use all kinds of headers. This example shows a header image in front of a pattern."
@@ -30,7 +30,7 @@ header:
 
 
 
-### All Header-Styles 
+### All Header-Styles
 {: .t60 }
 
 {% include list-posts tag='header' %}

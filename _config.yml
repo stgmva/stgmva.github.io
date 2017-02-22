@@ -12,24 +12,22 @@ title: "STGMVA"
 
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "A Flexible Theme for Jekyll"
+slogan: ""
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes."
+description: "Missouri Valley Ambulance is a blog about technology. Primarily it focues on mechanical keyboards and Apple. "
 
 # Main author of the website
 # See > authors.yml
-author: phlow
+author: Morganspeck
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
 url: 'http://stgmva.github.io'
 baseurl: ''
 
-# This is for the editing function in _/includes/improve_content
-# Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -106,7 +104,7 @@ defaults:
       show_meta: false 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for pages
+      author: Morgan Speck     # Default author for pages
   -
     scope:
       path: ""
@@ -115,7 +113,7 @@ defaults:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for posts
+      author: Morgan Speck    # Default author for posts
 
 
 

@@ -1,9 +1,43 @@
 ---
 layout: home
 title: MVASTAGE
+#widget1:
+#  title: "Widget 1"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+#widget2:
+#  title: "Widget 2"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+#widget3:
+#  title: "Widget 3"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
 ---
 
 <center><h2> The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes, Apple, always tech.</h2></center><br>
+
+<div class="row t60">
+	{% if page.widget1.title %}
+		{% include _frontpage-widget.html widget=page.widget1 %}
+	{% endif %}
+
+
+	{% if page.widget2.title %}
+		{% include _frontpage-widget.html widget=page.widget2 %}
+	{% endif %}
+
+
+	{% if page.widget3.title %}
+		{% include _frontpage-widget.html widget=page.widget3 %}
+	{% endif %}
+</div>
+
+
+
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
@@ -16,6 +50,7 @@ title: MVASTAGE
 	    {{ post.subtitle }}
 	  </h2>
 	  {% endif %}
+
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
     <p>
         {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
@@ -36,17 +71,17 @@ title: MVASTAGE
 </div>
 <br>
 <br>
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
+
+<div id="post-nav" class="row">
   {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
+  <div class="small-5 columns"><a class="button small radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div><!-- /.small-4.columns -->
   {% endif %}
+  <div class="small-2 columns text-center"><a class="radius button small" href="{{ site.url }}/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a></div><!-- /.small-4.columns -->
   {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
+  <div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div><!-- /.small-4.columns -->
   {% endif %}
+</div>
+
+
+
 </ul>
-{% endif %}

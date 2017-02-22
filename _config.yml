@@ -41,7 +41,7 @@ avatar: "/img/avatar-icon.png"
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://stgmva.github.io/images/'
+urlimg: '/images/'
 
 
 # Logo size is 600x80 pixels
@@ -53,7 +53,7 @@ paginate: 5
 
 
 # Pagination path › Important for blog page in /blog/ to work
-paginate_path: "blog/page:num"
+paginate_path: "/page:num"
 
 
 # Theme works best with Kramdown (using the table of contents function)

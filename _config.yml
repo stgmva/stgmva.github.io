@@ -19,20 +19,13 @@ title: Missouri Valley Ambulance
 # Short description of your site
 description:
 
-
-# This URL points directly to the images directory making
-# things easier to link to images in posts and templates. It needs a slash at the end.
-#
-# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
-# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
-#
-urlimg: "/images/"
-
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
+
+urlimg: "/images/"
 
 # List of links in the navigation bar
 navbar-links:
@@ -102,7 +95,7 @@ defaults:
 sass:
     sass_dir: _sass
     style: :compressed
-
+    
 # Exclude these files from production site
 exclude:
   - Gemfile

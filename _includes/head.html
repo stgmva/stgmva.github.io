@@ -1,91 +1,108 @@
-{% comment %}
-#
-#   Liquid variables are created at the top to keep the source DRY and clean.
-#   Idea by ericcarlisle.com
-#
-#   Variables › {{ url }} › site.url + site.baseurl
-#   Variables › {{ description }} › excerpt, page.meta_description, or site.description
-#   Variables › {{ title }} › page.title
-#
-{% endcomment %}{% capture ignore %}
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  </style>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-{% assign url = site.baseurl | prepend: site.url %}
+  <meta name="author" content="{{ site.author.name }}" />
 
-{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
-{% assign description = description | strip_html | escape | strip %}
-
-{% capture title %}{% if page.meta_title %}{{ page.meta_title}}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title | strip_html | strip }}{% endif %}{% endcapture %}
-
-{% assign title = title | strip_html | escape | strip_newlines %}
-
-{% endcapture %}<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
-
-    <link rel="stylesheet" type="text/css" href="{{ url }}/assets/css/styles_feeling_responsive.css">
-
-  {% if site.asciidoctor-enabled == true %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+  {% if page.subtitle %}
+  <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
-	<script src="{{ url }}/assets/js/modernizr.min.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-	<script>
-		WebFont.load({
-			google: {
-				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
-			}
-		});
-	</script>
+  <!-- TODO hardcode the required JS because on 2016-02-01 GitHub pages migrated to jekyll 3 and broke this template -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" href="/css/index.css" />
+  <!-- end TODO -->
 
-	<noscript>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
-	</noscript>
+  {% if layout.common-ext-css %}
+    {% for css in layout.common-ext-css %}
+      <link rel="stylesheet" href="{{ css }}" />
+    {% endfor %}
+  {% endif %}
 
+  {% if layout.common-css %}
+    {% for css in layout.common-css %}
+      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+    {% endfor %}
+  {% endif %}
 
-	<!-- Search Engine Optimization -->
-	<meta name="description" content="{{ description }}">
-	{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}">{% endif %}
-	{% if site.bing_webmastertools_id %}<meta name="msvalidate.01" content="{{ site.bing_webmastertools_id }}" >{% endif %}
-	{% if site.yandex_site_verification %}<meta name="yandex-verification" content="{{ site.yandex_site_verification }}">{% endif %}
-	{% if site.google_author %}<link rel="author" href="{{ site.google_author }}">{% endif %}
-	{% if site.alexa_verify_id %}<meta name="alexaVerifyID" content="{{ site.alexa_verify_id }}">{% endif %}
-	{% if page.noindex == true or layout.noindex == true %}<meta name="robots" content="noindex">{% endif %}
-	<link rel="canonical" href="{{ url }}{{ page.url }}">
+  {% if layout.common-googlefonts %}
+    {% for font in layout.common-googlefonts %}
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+    {% endfor %}
+  {% endif %}
 
+  {% if layout.ext-css %}
+    {% for css in layout.ext-css %}
+      <link rel="stylesheet" href="{{ css }}" />
+    {% endfor %}
+  {% endif %}
 
-	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="{{ title }}">
-	<meta property="og:description" content="{{ description }}">
-	<meta property="og:url" content="{{ url }}{{ page.url }}">
-	<meta property="og:locale" content="{% if site.og_locale == nil %}en_EN{% else %}{{ site.og_locale }}{% endif %}">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="{{ site.title }}">
-	{% if page.image.title %}<meta property="og:image" content="{{ site.urlimg }}{{ page.image.title }}">{% endif %}
-	{% if site.socialmedia.facebook %}<meta property="article:author" content="https://www.facebook.com/{{ site.socialmedia.facebook }}">{% endif %}
+  {% if layout.css %}
+    {% for css in layout.css %}
+      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+    {% endfor %}
+  {% endif %}
 
+  {% if layout.googlefonts %}
+    {% for font in layout.googlefonts %}
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+    {% endfor %}
+  {% endif %}
 
-	{% if site.socialmedia.twitter %}
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="{{ site.socialmedia.twitter }}">
-	<meta name="twitter:creator" content="{{ site.socialmedia.twitter }}">
-	<meta name="twitter:title" content="{{ title }}">
-	<meta name="twitter:description" content="{{ description }}">
-	{% if page.image.title %}<meta name="twitter:image" content="{{ site.urlimg }}{{ page.image.title }}">{% endif %}
-	{% endif %}
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:type" content="website" />
 
-	<link type="text/plain" rel="author" href="{{ url}}/humans.txt">
+  {% if page.id %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
+  {% else %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+  {% endif %}
 
-	{% if page.mediaplayer == true %}
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="{{ url }}/assets/mediaelement_js/mediaelement-and-player.min.js"></script>
-		<link rel="stylesheet" href="{{ url }}/assets/mediaelement_js/mediaelementplayer.min.css">
-	{% endif %}
+  {% if page.fb-img %}
+  <meta property="og:image" content="{{ page.fb-img }}" />
+  {% elsif site.avatar %}
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% else %}
+  <meta property="og:image" content="" />
+  {% endif %}
 
-	{% include _favicon.html %}
+  <!-- Icons -->
 
-	{% unless page.style == NULL %}
-	<style type="text/css">{{ page.style }}</style>
-	{% endunless %}
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png?v=3">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-touch-icon-60x60.png?v=3">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png?v=3">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-touch-icon-76x76.png?v=3">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png?v=3">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon-120x120.png?v=3">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-touch-icon-144x144.png?v=3">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-touch-icon-152x152.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png?v=3">
+  <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png?v=3" sizes="32x32">
+  <link rel="icon" type="image/png" href="/img/icons/favicon-194x194.png?v=3" sizes="194x194">
+  <link rel="icon" type="image/png" href="/img/icons/favicon-96x96.png?v=3" sizes="96x96">
+  <link rel="icon" type="image/png" href="/img/icons/android-chrome-192x192.png?v=3" sizes="192x192">
+  <link rel="icon" type="image/png" href="/img/icons/favicon-16x16.png?v=3" sizes="16x16">
+  <link rel="manifest" href="/img/icons/manifest.json?v=3">
+  <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg?v=3" color="#2aa198">
+  <link rel="shortcut icon" href="/img/icons/favicon.ico?v=3">
+  <meta name="msapplication-TileColor" content="#fdf6e3">
+  <meta name="msapplication-TileImage" content="/img/icons/mstile-144x144.png?v=3">
+  <meta name="msapplication-config" content="/img/icons/browserconfig.xml?v=3">
+  <meta name="theme-color" content="#fdf6e3">
+
+</head>

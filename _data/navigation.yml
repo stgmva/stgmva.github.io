@@ -1,11 +1,13 @@
-- title: Home
+- title: Start
   url: "/"
-  side: left
-
-- title: "Projects"
-  url: "/projects"
   side: right
+
+
 
 - title: "About"
   url: "/aboutme"
+  side: right
+
+- title: "Projects"
+  url: "/projects"
   side: right

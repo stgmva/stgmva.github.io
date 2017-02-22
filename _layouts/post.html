@@ -3,7 +3,7 @@ layout: default
 ---
 <center><img src="{{ site.baseurl }}/img/titlecard.png" alt="Missouri Valley Ambulance"></center>
 
-
+   
 <header class="header-post">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -42,3 +42,11 @@ layout: default
     </ul>
   </div>
 </div>
+
+{% if page.comments %}
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    {% include disqus.html %}
+  </div>
+</div>
+{% endif %}

@@ -1,35 +1,24 @@
 ---
-common-css:
-  - "/css/bootstrap.min.css"
-  - "/css/main.css"
-common-ext-css:
-  - "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-common-googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-  - "Playfair+Display:400,700,400bold,400italic,700bold,700italic"
-common-js:
-  - "/js/jquery-1.11.2.min.js"
-  - "/js/bootstrap.min.js"
-  - "/js/main.js"
+layout: compress
 ---
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+<head>
+	{% include _head.html %}
+</head>
+<body id="top-of-page" class="{{ layout.format }}">
+	{% unless page.skip_boilerplate %}
+	{% include _navigation.html %}
+	{% endunless %}
 
-<!DOCTYPE html>
-<html lang="en">
+	{% include _masthead.html %}
 
-  {% include head.html %}
+	{{ content }}
 
-  <body>
+	{% unless page.skip_boilerplate %}
+	{% include _footer.html %}
+	{% endunless %}
 
-    {% include nav.html %}
-
-    <div role="main" class="container main-content">
-      {{ content }}
-    </div>
-
-    {% include footer.html %}
-
-    {% include footer-scripts.html %}
-
-  </body>
+	{% include _footer_scripts.html %}
+</body>
 </html>

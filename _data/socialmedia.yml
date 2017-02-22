@@ -1,27 +1,22 @@
 - name: GitHub
-  url:
+  url: http://github.com/
   class: icon-github
-  title: Code und mehr...
+  title: ""
 
 - name: YouTube
-  url:
+  url: http://www.youtube.com/
   class: icon-youtube
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+  title: ""
 
 - name: Twitter
-  url:
+  url: http://twitter.com/
   class: icon-twitter
-  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+  title: ""
 
-- name: Mixcloud
-  url:
-  class: icon-cloud
-  title: "Mixe, was sonst?"
-
-- name: Phlow YouTube Google+
-  url: 
-  class: icon-googleplus
-  title: "YouTube Google+"
+# - name: Mixcloud
+#   url: http://www.mixcloud.com/
+#   class: icon-cloud
+#   title: ""
 
 # - name: Facebook
 #   url: http://www.facebook.com/

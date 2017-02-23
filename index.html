@@ -18,7 +18,7 @@ title: MVASTAGE
 #  text: ''
 ---
 
-<center><h3>The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes, Apple, always tech.</h3></center><br>
+<center><h3>latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes, Apple, always tech.</h3></center><br>
 
 <div class="row t60">
 	{% if page.widget1.title %}
@@ -35,7 +35,7 @@ title: MVASTAGE
 		{% include _frontpage-widget.html widget=page.widget3 %}
 	{% endif %}
 </div>
-
+<center>
 <div class="row t30">
 	<div class="medium-8 columns">
 <div class="posts">
@@ -54,9 +54,9 @@ title: MVASTAGE
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
 		{% if post.iframe %}
 
-
+<div class="flex-video">
 		  {{ post.iframe}}
-
+</div>
 			{% endif %}
 		  {% if post.video.thumbnailUrl %}<meta itemprop="thumbnailUrl" content="{{ post.video.thumbnailUrl }}" />{% endif %}
 		  {% if post.video.contentURL %}<meta itemprop="contentURL" content="{{ post.video.contentURL }}" />{% endif %}
@@ -91,7 +91,7 @@ title: MVASTAGE
   <div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div><!-- /.small-4.columns -->
   {% endif %}
 </div>
-
+</center>
 
 
 </ul>

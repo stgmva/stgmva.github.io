@@ -54,9 +54,9 @@ title: MVASTAGE
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
 		{% if post.iframe %}
 
-		<div class="flex-video">
+
 		  {{ post.iframe}}
-		</div>
+	
 			{% endif %}
 		  {% if post.video.thumbnailUrl %}<meta itemprop="thumbnailUrl" content="{{ post.video.thumbnailUrl }}" />{% endif %}
 		  {% if post.video.contentURL %}<meta itemprop="contentURL" content="{{ post.video.contentURL }}" />{% endif %}

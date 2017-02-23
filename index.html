@@ -53,7 +53,7 @@ title: MVASTAGE
 
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
 		{% if post.iframe %}
-<div class="small-12 columns">
+
 		<div class="flex-video">
 		  {{ post.iframe}}
 		</div>
@@ -61,7 +61,7 @@ title: MVASTAGE
 		  {% if post.video.thumbnailUrl %}<meta itemprop="thumbnailUrl" content="{{ post.video.thumbnailUrl }}" />{% endif %}
 		  {% if post.video.contentURL %}<meta itemprop="contentURL" content="{{ post.video.contentURL }}" />{% endif %}
 		  {% if post.video.embedURL %}<meta itemprop="embedURL" content="{{ post.video.embedURL }}" />{% endif %}
-</div>
+
     <p>
         {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>

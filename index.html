@@ -35,7 +35,7 @@ title: MVASTAGE
 		{% include _frontpage-widget.html widget=page.widget3 %}
 	{% endif %}
 </div>
-<center>
+
 <div class="row t30">
 	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
 <div class="posts">
@@ -91,7 +91,7 @@ title: MVASTAGE
   <div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div><!-- /.small-4.columns -->
   {% endif %}
 </div>
-</center>
+
 
 
 </ul>

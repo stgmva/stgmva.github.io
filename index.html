@@ -18,7 +18,7 @@ title: MVASTAGE
 #  text: ''
 ---
 
-<center><h3>The latest in tinfoil hat fashion.<br>Mostly keyboards, sometimes, Apple, always tech.</h3></center><br>
+
 
 <div class="row t60">
 	{% if page.widget1.title %}
@@ -50,7 +50,9 @@ title: MVASTAGE
 	    {{ post.subtitle }}
 	  </h2>
 	  {% endif %}
-
+		<p class="post-meta">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </p>
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
 		{% if post.iframe %}
 
@@ -62,15 +64,10 @@ title: MVASTAGE
 		  {% if post.video.contentURL %}<meta itemprop="contentURL" content="{{ post.video.contentURL }}" />{% endif %}
 		  {% if post.video.embedURL %}<meta itemprop="embedURL" content="{{ post.video.embedURL }}" />{% endif %}
 
-    <p>
-        {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
-    </p>
+
     </a>
 
-    <p class="post-meta">
-      {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+
 
     <div class="post-entry">
     {{ post.content }}
@@ -84,11 +81,13 @@ title: MVASTAGE
 
 <div id="post-nav" class="row">
   {% if paginator.previous_page %}
-  <div class="small-5 columns"><a class="button small radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div><!-- /.small-4.columns -->
+  <div class="show-for-small-only"><div class="small-5 columns"><a class="button tiny radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div><!-- /.small-4.columns -->
+	  <div class="show-for-medium-up"><div class="small-5 columns"><a class="button small radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div>
   {% endif %}
-  <div class="small-2 columns text-center"><a class="radius button small" href="{{ site.url }}/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a></div><!-- /.small-4.columns -->
+  <div class="show-for-small-only"><div class="small-2 columns text-center"><a class="radius button tiny" href="{{ site.url }}/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a></div></div><!-- /.small-4.columns -->
   {% if paginator.next_page %}
-  <div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div><!-- /.small-4.columns -->
+  <div class="show-for-small-only"><div class="small-5 columns text-right"><a class="button tiny radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
+<div class="show-for-medium-up"><div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
   {% endif %}
 </div>
 

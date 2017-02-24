@@ -4,10 +4,10 @@ title: "Blog Archive"
 teaser: "Click on a headline to read the teaser."
 breadcrumb: true
 header:
-   image_fullwidth: you-can-delete-me-header.png
 ---
 <div id="blog-index" class="row">
-	<div class="small-12 columns t30">
+<div class="row t30">
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
 		<h1>{{ page.title }}</h1>
 		{% if page.teaser %}<p class="teaser">{{ page.teaser }}</p>{% endif %}
 

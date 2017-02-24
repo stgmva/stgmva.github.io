@@ -6,6 +6,7 @@ layout: page
 subheadline: ""
 title: ""
 teaser: ""
+author: 
 categories:
   -
 tags:

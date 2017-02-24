@@ -6,6 +6,7 @@ layout: page
 subheadline: ""
 title: ""
 teaser: ""
+author:
 #
 # Styling
 #
@@ -15,4 +16,3 @@ header: no
 #
 permalink:
 ---
-

@@ -6,10 +6,11 @@ layout: page-fullwidth
 subheadline: ""
 title: ""
 teaser: ""
+author:
 categories:
-  - 
+  -
 tags:
-  - 
+  -
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
@@ -29,4 +30,3 @@ Inhalt
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
-

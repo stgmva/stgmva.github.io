@@ -6,11 +6,12 @@ layout: page
 subheadline: ""
 title: ""
 teaser: ""
+author:
 meta_description: ""
 categories:
-  - 
+  -
 tags:
-  - 
+  -
 #
 # Styling
 #

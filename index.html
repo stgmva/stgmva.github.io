@@ -84,7 +84,6 @@ title: MVASTAGE
   <div class="show-for-small-only"><div class="small-5 columns"><a class="button tiny radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div><!-- /.small-4.columns -->
 	  <div class="show-for-medium-up"><div class="small-5 columns"><a class="button small radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div>
   {% endif %}
-  <div class="show-for-small-only"><div class="small-2 columns text-center"><a class="radius button tiny" href="{{ site.url }}/archive/" title="Blog {{ site.data.language.archive }}">{{ site.data.language.archive }}</a></div></div><!-- /.small-4.columns -->
   {% if paginator.next_page %}
   <div class="show-for-small-only"><div class="small-5 columns text-right"><a class="button tiny radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
 <div class="show-for-medium-up"><div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->

@@ -230,8 +230,8 @@ article dl dd   { line-height: 1.6; margin-bottom: rem-calc(12); margin-left: re
 blockquote {
     font-style: italic;
     position: relative;
-    border-left: 5px solid #2aa198;
-    margin: 0 30px 30px 30px;
+    border-left: 5px solid $primary-color;
+    padding: 0.5em 10px;
     color: #4b4b4d
 }
 
@@ -244,7 +244,7 @@ blockquote {
         position:absolute;
         left:-25px;
         top: auto;
-        color: $ci-1
+        color: $secondary-color
     }
     blockquote cite:before {
         content:"\2014 \0020"

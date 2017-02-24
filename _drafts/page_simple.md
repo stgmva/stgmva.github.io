@@ -3,16 +3,13 @@ layout: page
 #
 # Content
 #
-subheadline: ""
 title: ""
+subheadline: ""
 teaser: ""
-author:
+author: Morgan
 #
 # Styling
 #
-header: no
-#
-# Metainformation & Customization
-#
-permalink:
+header:
+
 ---

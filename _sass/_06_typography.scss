@@ -231,20 +231,20 @@ blockquote {
     font-style: italic;
     position: relative;
     border-left: 5px solid $primary-color;
-      margin: 1.5em 10px;
-    padding: 0.5em 10px;
+    margin: 1.5em 10px;
     color: #4b4b4d
 }
 
     blockquote p {font-style: italic; color: $grey-10; }
 
     blockquote:before {
-        display:block;  content: open-quote;;
+        display:block;
+        content: open-quote;;
         font-size:4em;
         line-height: 0.1em;
         position:absolute;
-        left:-25px;
-        top: auto;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
         color: $secondary-color
     }
     blockquote cite:before {

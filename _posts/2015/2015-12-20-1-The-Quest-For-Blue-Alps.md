@@ -3,18 +3,10 @@ layout: page
 subheadline: "A bit about Alps switches, and the elusive blue"
 title: "The Quest For Blue Alps"
 teaser: "That's right, I did a buy-it-now on a listing for a computer that _happens to come with a keyboard_ for the sole purpose of getting a keyboard that _might_ be the one I'm after."
-
-categories:
-  -
 author: Morgan
-header: 
-image:
-    title: http://imgur.com/GWyKmQV.jpg
-    thumb: http://imgur.com/GWyKmQV.jpg
-    homepage: http://imgur.com/GWyKmQV.jpg
-    caption:
-    caption_url:
 ---
+
+![](http://imgur.com/GWyKmQV.jpg)
 
 The world of [Alps keyboard switches(SKCL/SKCM)](http://deskthority.net/wiki/Alps_SKCL/SKCM_series) is complex and deep. Modern day keyboards typically use [Cherry MX](http://deskthority.net/wiki/Cherry_MX) based switches, but in the personal computer boom of the 1980s, Alps was a dominant force.
 

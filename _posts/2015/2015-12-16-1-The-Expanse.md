@@ -7,6 +7,7 @@ author: Morgan
 ---
 
 ![](http://imgur.com/rkfkdAJ.jpg)
+
 I've just finished watching the first episode of SyFy's new highly-anticipated series: [The Expanse](http://www.syfy.com/theexpanse).
 
 I'm not familiar with the [novel series](https://en.wikipedia.org/wiki/The_Expanse_(novel_series)), but I was looking forward to watching the show after all the hype I heard about it from [Steve Gibson](https://twitter.com/sggrc) on [Security Now](https://twit.tv/shows/security-now). By all accounts, The Expanse looks to be SyFy's first truly serious, high production value series since Battlestar Galactica. For someone like me who doesn't have paid cable television, it's not too often that I'm aware of new shows weeks before they premiere. I'd even seen previews for the show during the trailers before a few movies - so I was excited for it to begin.

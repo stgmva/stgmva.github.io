@@ -4,6 +4,10 @@ subheadline: ""
 title: "On Becoming a Keyboard Wonk"
 teaser: ""
 author: Morgan
+-image:
+-    title: http://imgur.com/5oLoDXV.jpg
+-    thumb: http://imgur.com/5oLoDXV.jpg
+-    homepage: http://imgur.com/5oLoDXV.jpg
 ---
 
 ![](http://imgur.com/5oLoDXV.jpg)

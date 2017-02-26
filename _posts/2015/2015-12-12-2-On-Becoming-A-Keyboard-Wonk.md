@@ -1,7 +1,7 @@
 ---
 layout: page
 subheadline: ""
-title: "On Becoming a Keyboard Wonk"
+title: "On Becoming a Keyboard Derp"
 teaser: ""
 author: Morgan
 -image:

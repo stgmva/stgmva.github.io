@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "In Which He Decides To Start A Blog"
-subheadline:  ""
+subheadline:  "derp"
 teaser: ""
 author: Morgan
 ---

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About 
-subtitle: 
+title: About
+subtitle:
+permalink: "/aboutme/"
 ---
 <img src="\img\Profile.jpeg" alt="" style="width:25%">
 

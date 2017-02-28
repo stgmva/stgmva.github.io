@@ -4,9 +4,15 @@ title:  "Building Wall ⋅ E"
 subheadline:  ""
 teaser: "Wall ⋅ E is the first complex/advanced Lego set I've built in probably a decade. Like many kids, I was nuts for Lego as a child, I'd spend hours and hours endlessly building and rebuilding things out if my giant container of parts (which I still have by the way). "
 author: Morgan
+image:
+    title: http://imgur.com/nz82WaC.jpg
+    thumb: http://imgur.com/nz82WaC.jpg
+    homepage: http://imgur.com/nz82WaC.jpg
+    caption: Wall⋅E before assembly
+    caption_url:
 ---
 
-![Wall⋅E before assembly](http://imgur.com/nz82WaC.jpg)
+
 
 For Christmas this year I was fortunate enough to receive a Lego Wall ⋅ E from my mother.
 

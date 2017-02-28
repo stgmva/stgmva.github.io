@@ -2,6 +2,7 @@
 layout: page
 title: ErgoDox Project
 subtitle: Comprehensive ErgoDox Build Log
+permalink: "/pages/ErgoDox_Omnibus"
 ---
 
 ![](http://imgur.com/RAKomIg.jpg)

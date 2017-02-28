@@ -4,9 +4,15 @@ subheadline: ""
 title: "The Expanse"
 teaser: ""
 author: Morgan
+image:
+    title: http://imgur.com/rkfkdAJ.jpg
+    thumb: http://imgur.com/rkfkdAJ.jpg
+    homepage: http://imgur.com/rkfkdAJ.jpg
+    caption:
+    caption_url:
 ---
 
-![](http://imgur.com/rkfkdAJ.jpg)
+
 
 I've just finished watching the first episode of SyFy's new highly-anticipated series: [The Expanse](http://www.syfy.com/theexpanse).
 

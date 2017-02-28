@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 subtitle: Mostly keyboards, always tech
+permalink: "/projects/"
 ---
 
 # Custom & Modified Keyboards

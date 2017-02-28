@@ -4,9 +4,18 @@ subheadline: ""
 title: "On Becoming a Keyboard Derp"
 teaser: ""
 author: Morgan
+image:
+    title: http://imgur.com/5oLoDXV.jpg
+    thumb: http://imgur.com/5oLoDXV.jpg
+    homepage: http://imgur.com/5oLoDXV.jpg
+    caption:
+    caption_url:
+breadcrumb: true
+categories:
+  - design
 ---
 
-![](http://imgur.com/5oLoDXV.jpg)
+
 
 > #### **[Wonk](http://beta.merriam-webster.com/dictionary/wonk)**  
 > :noun \ˈwäŋk, ˈwȯŋk  

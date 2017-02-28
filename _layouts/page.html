@@ -8,7 +8,7 @@ format: post
 			<header>
 				{% if page.image.title %}
 				<figure>
-					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
+					<img src="{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
 
 					{% if page.image.caption_url and page.image.caption %}
 					<figcaption class="text-right">
@@ -29,24 +29,30 @@ format: post
 			</header>
 
 
-			{% if page.teaser %}
-			<p class="teaser" itemprop="description">
-				{{ page.teaser }}
-			</p>
-			{% endif %}
-
 			<span itemprop="articleSection">
 			{{ content }}
 			</span>
+
+
 
 			{% if page.show_meta == true %}
 			{% include _meta_information.html %}
 			{% endif %}
 
+			<div id="bottom" class="row t30">
+					<div class="small-12 columns">
+						 {% include next-previous-post-in-category %}
+					</div><!-- /.small-12.columns -->
+			</div>
+			
 			{% if page.comments == true %}
 			{% include _comments.html %}
 			{% endif %}
+
+
+
 		</article>
+
 	</div><!-- /.medium-8.columns -->
 
 

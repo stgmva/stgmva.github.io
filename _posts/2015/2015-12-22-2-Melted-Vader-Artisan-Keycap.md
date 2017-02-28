@@ -4,10 +4,15 @@ title:  "Melted Vader Keycap"
 subheadline:  ""
 teaser: "I don't care for most artisan keycaps, but a keycap of Vader's mask as seen in _The Force Awakens_ was a must have."
 author: Morgan
-
+image:
+    title: http://imgur.com/N6EfscN.jpg
+    thumb: http://imgur.com/N6EfscN.jpg
+    homepage: http://imgur.com/N6EfscN.jpg
+    caption:
+    caption_url:
 ---
 
-![Melted Lord Vader Keycap](http://imgur.com/N6EfscN.jpg)
+
 
 I don't care for most artisan keycaps, but a keycap of Vader's mask as seen in _The Force Awakens_ was a must have.
 

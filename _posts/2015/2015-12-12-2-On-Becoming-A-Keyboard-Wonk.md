@@ -1,27 +1,33 @@
 ---
 layout: page
+title: "On Becoming a Keyboard Wonk"
 subheadline: ""
-title: "On Becoming a Keyboard Derp"
-teaser: ""
+teaser: "I suppose what made me fall in love with this board most of all was the feel of the keypress. It was so different from what I was used to with traditional keyboards. It was incredibly tactile, smooth, and required significantly less force (so it was easier on my fingers). All the flash gamer boards I'd ever played with at a Best Buy just didn't appeal to me, but getting my hands on this board  really showed me the light.
+"
 author: Morgan
+categories:
+  - keyboards
 image:
     title: http://imgur.com/5oLoDXV.jpg
-    thumb: http://imgur.com/5oLoDXV.jpg
     homepage: http://imgur.com/5oLoDXV.jpg
-    caption:
+    thumb: http://imgur.com/5oLoDXV.jpg
+    caption: Apple Extended Keyboard II
     caption_url:
+video:
+    embedURL: ""
+    contentURL: ""
+    thumbnailUrl: ""
 breadcrumb: true
-categories:
-  - design
 ---
 
-
-
+If you're in any way involved in the gaming or technology world, you've likely come across, tried, or at bare minimum _heard_ of mechanical keyboards.
+<br>
+<br>
 > #### **[Wonk](http://beta.merriam-webster.com/dictionary/wonk)**  
 > :noun \ˈwäŋk, ˈwȯŋk  
 > A person who knows a lot about the details of a particular field (such as politics) and often talks a lot about that subject.
 
-If you're in any way involved in the gaming or technology world, you've likely come across, tried, or at bare minimum _heard_ of mechanical keyboards.
+
 
 For the uninitiated, a [mechanical keyboard](http://www.pcworld.com/article/240939/mechanical_keyboards_should_you_switch_.html) is one in which every key has its own discrete switch. These switches detect a keypress mechanically. A slider moves down the switch, and actuates a metal leaf of some sort, connecting a circuit, and telling the computer it's connected to that a key has been pressed. This is different from a typical keyboard that most consumers use - those have rubber domes, and keypresses are detected when those domes are fully collapsed onto a printed circuit board, completing the circuit. Typical keyboards, if one key fails, nothing can be done about it, but on a mechanical board, discrete switches can be replaced should one fail.
 

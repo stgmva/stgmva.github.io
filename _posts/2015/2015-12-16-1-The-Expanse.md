@@ -1,17 +1,19 @@
 ---
 layout: page
-subheadline: ""
 title: "The Expanse"
-teaser: ""
+subheadline: ""
+teaser: "The world in the Expanse is certainly captivating. Many of the problems that exist in modern-day Earth seem to have continued into the future as well. The Expanse is not a bright shiny utopia, there is struggle, there is a certainly poverty among the people working in the asteroid belt. Mind you, it's not entirely dark and gritty, but there is a definite sense of realism that the classes of people that exist today will have an analogue in the future as well."
 author: Morgan
+categories:
+  -
 image:
     title: http://imgur.com/rkfkdAJ.jpg
-    thumb: http://imgur.com/rkfkdAJ.jpg
     homepage: http://imgur.com/rkfkdAJ.jpg
+    thumb: http://imgur.com/rkfkdAJ.jpg
     caption:
     caption_url:
+breadcrumb: true
 ---
-
 
 
 I've just finished watching the first episode of SyFy's new highly-anticipated series: [The Expanse](http://www.syfy.com/theexpanse).

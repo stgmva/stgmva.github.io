@@ -1,8 +1,22 @@
 ---
 layout: page
-title:  "Zeobit exposes 13 million users' data"
-subheadline:  ""
-teaser: "Big surprise, Zeobit, a company well know to Mac users for their obtrusive adds promising to 'clean up your Mac', yet failing in every regard to do anything of the sort has done it wrong"
+title: "Zeobit exposes 13 million users' data"
+subheadline: ""
+teaser: ""
+author: Morgan
+categories:
+  -
+image:
+    title:
+    homepage:
+    thumb:
+    caption:
+    caption_url:
+video:
+    embedURL: ""
+    contentURL: ""
+    thumbnailUrl: ""
+breadcrumb: true
 ---
 
 > Anti-virus company MacKeeper is making headlines today for its lax security on a customer database that contained 13 million customer records complete with names, email addresses, usernames, password hashes, phone numbers, IP address, and system information.

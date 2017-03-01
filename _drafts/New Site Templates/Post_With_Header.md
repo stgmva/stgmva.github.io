@@ -3,14 +3,14 @@ layout: page
 title: ""
 subheadline: ""
 teaser: ""
-author: Morgan
 categories:
   -
+author: Morgan
+header: no
 image:
     title:
-    homepage:
     thumb:
+    homepage:
     caption:
     caption_url:
-breadcrumb: true
 ---

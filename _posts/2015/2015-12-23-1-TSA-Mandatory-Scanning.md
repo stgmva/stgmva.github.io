@@ -1,9 +1,18 @@
 ---
 layout: page
-title:  "TSA body scanning may be forced on 'some passengers'"
-subheadline:  ""
+title: "TSA body scanning may be forced on 'some passengers'"
+subheadline: ""
 teaser: ""
 author: Morgan
+categories:
+  -
+image:
+    title:
+    homepage:
+    thumb:
+    caption:
+    caption_url:
+breadcrumb: true
 ---
 
 > Your next flight might include a mandatory trip through the body scanner, with the US government quietly changing the opt-out rules for searches.

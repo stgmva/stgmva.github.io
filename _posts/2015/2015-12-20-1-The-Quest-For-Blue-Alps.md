@@ -1,18 +1,18 @@
 ---
 layout: page
-subheadline: "A bit about Alps switches, and the elusive blue"
 title: "The Quest For Blue Alps"
-teaser: "That's right, I did a buy-it-now on a listing for a computer that _happens to come with a keyboard_ for the sole purpose of getting a keyboard that _might_ be the one I'm after."
+subheadline: "A bit about Alps switches, and the elusive blue"
+teaser: "That's right, I did a buy-it-now on a listing for a computer that happens to come with a keyboard for the sole purpose of getting a keyboard that might be the one I'm after."
 author: Morgan
-image:
-    title: http://imgur.com/GWyKmQV.jpg
-    thumb: http://imgur.com/GWyKmQV.jpg
-    homepage: http://imgur.com/GWyKmQV.jpg
-    caption:
-    caption_url:
-breadcrumb: true
 categories:
   - keyboards
+image:
+    title: http://imgur.com/GWyKmQV.jpg
+    homepage: http://imgur.com/GWyKmQV.jpg
+    thumb: http://imgur.com/GWyKmQV.jpg
+    caption: Leading Edge DC-2014
+    caption_url:
+breadcrumb: true
 ---
 
 

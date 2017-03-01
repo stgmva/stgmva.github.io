@@ -1,9 +1,18 @@
 ---
 layout: page
-title:  "Brian Krebs' PayPal Account Compromised Again"
-subheadline:  ""
-teaser: ""
+title: "Brian Krebs' PayPal Account Compromised Again"
+subheadline: ""
+teaser: "The bottom line is that no amount of good passwords and out-of-band security is a match for a determined hacker and poor company policies."
 author: Morgan
+categories:
+  -
+image:
+    title:
+    homepage:
+    thumb:
+    caption:
+    caption_url:
+breadcrumb: true
 ---
 
 > The perpetrator tried to further stir up trouble by sending my PayPal funds to a hacker gang tied to the jihadist militant group ISIS. Although the intruder failed to siphon any funds, the successful takeover of the account speaks volumes about why most organizations — including many financial institutions — remain woefully behind the times in authenticating their customers and staying ahead of identity thieves.

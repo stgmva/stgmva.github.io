@@ -43,6 +43,7 @@ title: MVASTAGE
   <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h1 class="post-title">{{ post.title }}</h1>
+{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"<img src="{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
 
 	  {% if post.subtitle %}

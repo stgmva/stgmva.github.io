@@ -2,7 +2,7 @@
 layout: page
 title: "Apple's iPhone 7 Event"
 subheadline: "Quick Thoughts"
-teaser: ""
+teaser: "Apple is once again proving how powerful it is to own the whole stack. They're doing something interesting with A10 fusion. Not only are they producing a 4 core phone, but they're actually using those cores intelligently (looking at you Android OEMs)."
 author: Morgan
 categories:
   - apple

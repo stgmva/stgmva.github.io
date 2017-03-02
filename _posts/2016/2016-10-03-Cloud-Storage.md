@@ -2,7 +2,7 @@
 layout: page
 title: "Unlimited, Encrypted, Zero Knowledge Cloud Storage"
 subheadline: ""
-teaser: ""
+teaser: "The goal, as I see it, is to find a cloud storage solution that offers competitive pricing, and control over my content - specifically the ability to encrypt it prior to transit."
 author: Morgan
 categories:
   - tech

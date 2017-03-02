@@ -2,7 +2,7 @@
 layout: page
 title: "WhatsApp Gets Zucked"
 subheadline: ""
-teaser: ""
+teaser: "Glad I never started using Whatsapp, even after they went encrypted by default."
 author: Morgan
 categories:
   -

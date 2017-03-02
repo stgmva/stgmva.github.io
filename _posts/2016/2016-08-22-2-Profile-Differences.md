@@ -2,7 +2,7 @@
 layout: page
 title: "Profile Differences"
 subheadline: ""
-teaser: ""
+teaser: "SA profile is high, thick, ABS, but I didn't realize how big the height difference was until now."
 author: Morgan
 categories:
   - keyboards

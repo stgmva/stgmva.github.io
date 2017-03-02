@@ -2,7 +2,7 @@
 layout: page
 title: "ErgoDox Phase II"
 subheadline: "Mockup"
-teaser: ""
+teaser: "When I began planning my Ergodox build, I had my eyes on a build by witbliz using aluminum plates from AKmalamute's group buy."
 author: Morgan
 categories:
   - keyboards

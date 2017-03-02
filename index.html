@@ -44,12 +44,7 @@ title: MVASTAGE
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h1 class="post-title">{{ post.title }}</h1>
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"<img src="{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
-
-	  {% if post.subtitle %}
-	  <h2 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h2>
-	  {% endif %}
+{% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
 		<p class="post-meta">
       {{ post.date | date: "%B %-d, %Y" }}
     </p>

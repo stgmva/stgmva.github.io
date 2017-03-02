@@ -2,7 +2,7 @@
 layout: page
 title: "More For The Collection"
 subheadline: ""
-teaser: ""
+teaser: "Last week I got in some new parts for a future build, a lovely Zorbcaps artisan keycap, and a really unique new-in-box vintage board."
 author: Morgan
 categories:
   - keyboards

@@ -2,7 +2,7 @@
 layout: page
 title: "Studio & Touch Bar"
 subheadline: ""
-teaser: ""
+teaser: "I got the opportunity to play with a Surface Studio at a Microsoft Store yesterday - the machine is absolutely incredible. Incredible!"
 author: Morgan
 categories:
   - apple

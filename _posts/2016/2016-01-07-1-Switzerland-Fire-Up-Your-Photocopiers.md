@@ -3,7 +3,6 @@ layout: page
 title: "Turns out Swiss Watchmakers Aren't Original Either"
 subheadline: ""
 teaser: "Only 50 pieces will be made, all in white gold, and at a price of $24,900 – only a little bit more than the all-rose-gold Apple Watch Edition.
-
 If the watch costs that much, I wonder how much the photocopier was."
 author: Morgan
 categories:

@@ -4,14 +4,6 @@ title: "Every Corner Indeed"
 subheadline: ""
 teaser: ""
 author: Morgan
-categories:
-  -
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

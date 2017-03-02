@@ -5,13 +5,7 @@ subheadline: ""
 teaser: "Due to a pretty gnarly blizzard in my area today, the office was closed. Mind you, I wasn't clever enough to check my work email _before_ I drove to the office, so I rolled up at 9AM to find no cars there. Back to the apartment I went."
 author: Morgan
 categories:
-  -
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
+  - tech
 breadcrumb: true
 ---
 

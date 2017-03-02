@@ -6,12 +6,6 @@ teaser: "Much like the British Leyland in the 1970's, sometimes you really only 
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

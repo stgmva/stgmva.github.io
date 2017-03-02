@@ -7,12 +7,6 @@ teaser: "Over the weekend I had to perform repair surgery on my white Alps64 boa
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

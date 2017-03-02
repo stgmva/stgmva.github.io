@@ -6,12 +6,6 @@ teaser: "Basic RGB LED strip functionality has been implemented. I spent 3 days 
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

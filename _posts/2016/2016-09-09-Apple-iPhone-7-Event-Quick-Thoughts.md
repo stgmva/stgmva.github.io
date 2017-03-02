@@ -6,12 +6,6 @@ teaser: "Apple is once again proving how powerful it is to own the whole stack. 
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ## iPhone

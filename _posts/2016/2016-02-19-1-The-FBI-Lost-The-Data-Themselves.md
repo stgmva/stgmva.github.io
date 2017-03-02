@@ -6,12 +6,6 @@ teaser: "So it's law enforcement's own fault they can't access the data, and we 
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

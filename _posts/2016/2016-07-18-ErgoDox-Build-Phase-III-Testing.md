@@ -7,12 +7,6 @@ teaser: "Received my ErgoDox PCBS today. The adventurous idea of installing RGB 
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

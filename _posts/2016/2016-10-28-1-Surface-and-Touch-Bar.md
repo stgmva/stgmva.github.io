@@ -6,12 +6,6 @@ teaser: "I got the opportunity to play with a Surface Studio at a Microsoft Stor
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ![](https://i.imgur.com/43REIhT.jpg)

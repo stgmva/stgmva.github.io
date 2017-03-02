@@ -6,12 +6,6 @@ teaser: "This is the first time since the original iPad and iOS 3.2 that I can r
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 > This latest iOS release adds numerous innovations to the world’s most advanced mobile operating system. There are improvements to a wide range of apps, along with great new additions to CarPlay. iOS 9.3 may even help you get a good night’s sleep. And you’ll find a preview of new features that will make using iPad in schools easier and better for students and admins.

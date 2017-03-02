@@ -6,12 +6,6 @@ teaser: "This whole fight isn't about precedent at all he says. It's about justi
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

@@ -6,12 +6,6 @@ teaser: "When you're writing a blog that revolves a lot around your hobby and pr
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

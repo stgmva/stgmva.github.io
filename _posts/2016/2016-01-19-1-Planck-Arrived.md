@@ -6,12 +6,6 @@ teaser: "Nearly 6 months after the group buy on Massdrop ended, my Planck has fi
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

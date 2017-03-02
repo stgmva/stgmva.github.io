@@ -4,14 +4,6 @@ title: "Signal Subpoena"
 subheadline: ""
 teaser: "Fortunately, Open Whisper Systems does things right. They use end-to-end encryption and log as little information as possible."
 author: Morgan
-categories:
-  -
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

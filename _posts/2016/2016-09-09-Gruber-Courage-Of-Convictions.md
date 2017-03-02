@@ -6,12 +6,6 @@ teaser: "Apple if anything are a company about convictions. "
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

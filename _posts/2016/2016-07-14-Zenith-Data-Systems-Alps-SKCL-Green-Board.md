@@ -7,12 +7,6 @@ teaser: "I just got this Zenith Data Systems keyboard in. I'm not really sure wh
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

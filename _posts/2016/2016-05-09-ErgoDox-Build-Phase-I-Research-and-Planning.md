@@ -6,12 +6,6 @@ teaser: "My goal in this project is to build an ErgoDox that fits my desires and
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

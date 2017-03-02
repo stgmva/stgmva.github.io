@@ -6,12 +6,6 @@ teaser: "The cap is beautifully detailed and stays very true to its silver scree
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

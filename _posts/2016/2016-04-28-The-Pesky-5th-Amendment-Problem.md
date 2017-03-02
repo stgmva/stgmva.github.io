@@ -4,14 +4,6 @@ title: "The Pesky 5th Amendment Problem"
 subheadline: ""
 teaser: "So apparently the punishment these for refusing to have your 5th amendment rights violated is indefinite imprisonment."
 author: Morgan
-categories:
-  -
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

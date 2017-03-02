@@ -6,12 +6,6 @@ teaser: "When I began planning my Ergodox build, I had my eyes on a build by wit
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

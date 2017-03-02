@@ -1,19 +1,16 @@
 ---
 layout: video
-#
-# Content
-#
-subheadline: ""
+show_meta: true
 title: ""
+subheadline: ""
 teaser: ""
-author: Morgan
 categories:
-  -
-tags:
-  - video
-iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/WoHxoz_0ykI' frameborder='0' allowfullscreen></iframe>"
+    - videos
+author: Morgan
+iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/' frameborder='0' allowfullscreen></iframe>"
 video:
-    embedURL: ""
-    contentURL: ""
-    thumbnailUrl: ""
+    embedURL: "https://www.youtube.com/embed/"
+    contentURL: "https://www.youtube.com/watch?v="
+    thumbnailUrl: "http://img.youtube.com/vi//maxresdefault.jpg"
+breadcrumb: true
 ---

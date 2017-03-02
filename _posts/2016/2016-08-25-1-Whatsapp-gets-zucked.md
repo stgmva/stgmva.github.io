@@ -4,14 +4,6 @@ title: "WhatsApp Gets Zucked"
 subheadline: ""
 teaser: "Glad I never started using Whatsapp, even after they went encrypted by default."
 author: Morgan
-categories:
-  -
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

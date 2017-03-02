@@ -6,12 +6,6 @@ teaser: "Last week I got in some new parts for a future build, a lovely Zorbcaps
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

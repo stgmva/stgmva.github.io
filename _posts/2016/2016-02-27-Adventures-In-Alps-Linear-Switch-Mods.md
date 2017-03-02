@@ -6,12 +6,6 @@ teaser: "I love an MX mount linear; Cherry/Gateron Reds are a lovely switch. I d
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ![Red Matias Linear Switches](http://imgur.com/Kz0vJW7.jpg)

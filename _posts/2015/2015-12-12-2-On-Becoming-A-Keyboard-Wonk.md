@@ -13,10 +13,6 @@ image:
     thumb: http://imgur.com/5oLoDXV.jpg
     caption: Apple Extended Keyboard II
     caption_url:
-video:
-    embedURL: ""
-    contentURL: ""
-    thumbnailUrl: ""
 breadcrumb: true
 ---
 

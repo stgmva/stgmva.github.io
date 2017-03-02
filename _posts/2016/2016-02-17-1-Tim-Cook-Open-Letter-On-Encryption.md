@@ -6,12 +6,6 @@ teaser: "People ask me why I like Apple, why I buy their products. Apple is the 
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

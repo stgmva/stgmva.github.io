@@ -6,12 +6,6 @@ teaser: "Hot Keys Project had a sale last month for Easter themed keycaps. I pic
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

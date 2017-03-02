@@ -6,12 +6,6 @@ teaser: "Access-IS' boards are ortholinear matrix boards originally designed for
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ![](http://imgur.com/5MLX15s.jpg)

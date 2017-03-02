@@ -6,12 +6,6 @@ teaser: "The FBI is now confirming what many in the industry have been saying - 
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 The FBI on Monday:

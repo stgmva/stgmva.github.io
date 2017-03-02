@@ -6,12 +6,6 @@ teaser: "You know when you add a new Apple device to your lineup, you inevitably
 author: Morgan
 categories:
   - apple
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

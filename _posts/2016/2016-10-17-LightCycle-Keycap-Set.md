@@ -6,12 +6,6 @@ teaser: "Really rad keycap set from The Van Keyboards. "
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 

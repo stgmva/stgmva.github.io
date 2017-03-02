@@ -6,12 +6,6 @@ teaser: "Some folks think a 60% keyboard is small, they've got nothing on 40% bo
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ![](http://imgur.com/1TnlT0Z.jpg)

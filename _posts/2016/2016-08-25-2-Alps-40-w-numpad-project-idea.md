@@ -6,12 +6,6 @@ teaser: "I've had a Zenith Data Systems keyboard with glorious Alps SKCL Greens 
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ![](https://i.imgur.com/K5ZM3Vo.jpg)

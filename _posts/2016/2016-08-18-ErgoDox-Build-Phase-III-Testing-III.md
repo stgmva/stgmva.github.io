@@ -6,12 +6,6 @@ teaser: "Work on my building my test ErgoDox is complete. I knew going into this
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 Previously - [Phase III - Testing, Part 2]({{ site.baseurl }}/2016-07-21-ErgoDox-Build-Phase-III-Testing-II)

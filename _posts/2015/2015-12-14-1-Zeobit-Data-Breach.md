@@ -4,18 +4,6 @@ title: "Zeobit exposes 13 million users' data"
 subheadline: ""
 teaser: ""
 author: Morgan
-categories:
-  -
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
-video:
-    embedURL: ""
-    contentURL: ""
-    thumbnailUrl: ""
 breadcrumb: true
 ---
 

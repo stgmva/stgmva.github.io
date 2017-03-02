@@ -6,12 +6,6 @@ teaser: "SA profile is high, thick, ABS, but I didn't realize how big the height
 author: Morgan
 categories:
   - keyboards
-image:
-    title:
-    homepage:
-    thumb:
-    caption:
-    caption_url:
 breadcrumb: true
 ---
 ![](http://imgur.com/iwTPCYB.jpg)

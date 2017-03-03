@@ -5,7 +5,7 @@ title: "Nabi Dashcam"
 subheadline: ""
 teaser: "I've been pondering getting a dashcam for some months now. I am not a professional or commercial driver, and I'm not often in situations where I need to have a dashcam, but I think that they're potentially useful, and many are inexpensive."
 categories:
-    - videos
+    - tech
 author: Morgan
 iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/C7MoADT-xfo' frameborder='0' allowfullscreen></iframe>"
 video:

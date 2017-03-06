@@ -14,7 +14,7 @@
   side: right
   dropdown:
   - title: "ErgoDox"
-    url: "/pages/Ergodox_Omnibus"
+    url: "/Ergodox_Omnibus"
 
 
 - title: About

@@ -45,9 +45,15 @@ title: MVASTAGE
 	  <h1 class="post-title">{{ post.title }}</h1>
 {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
 <br>
-		<p class="post-meta">
+<p class="post-meta">
+	{% assign author = site.data.authors[post.author] %}
+	<!-- Output author details if some exist. -->
+	{% if author %}
+<a href="{{ author.uri }}" target="_blank"> By {{ author.name }}</a> • 
+{% endif %}
       {{ post.date | date: "%B %-d, %Y" }}
     </p>
+<br>
     {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
 		{% if post.iframe %}
 

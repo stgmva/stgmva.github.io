@@ -7,7 +7,7 @@ teaser: ""
 categories:
     - videos
 author: Morgan
-iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/' frameborder='0' allowfullscreen></iframe>"
+iframe: "<iframe width='970' height='546' src='//www.youtube.com/embed/7-kXougiZwU' frameborder='0' allowfullscreen></iframe>"
 video:
     embedURL: "https://www.youtube.com/embed/7-kXougiZwU"
     contentURL: "https://www.youtube.com/watch?v=7-kXougiZwU"

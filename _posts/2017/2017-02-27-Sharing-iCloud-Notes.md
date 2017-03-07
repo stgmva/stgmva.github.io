@@ -15,23 +15,23 @@ My girlfriend has long maintained a shopping list, and I've always needed to def
 
 The steps to share a note are super simple:
 
-+ Make a note of course, then tap the plus person icon.
++ <h5>Make a note of course, then tap the plus person icon.</h5>
 
-![](https://i.imgur.com/RSRgd4G.png)
+<img src="https://i.imgur.com/RSRgd4G.png" style="width: 30%; height: 30%"/>​
 
-+ Determine how to share the link. Your recipient must have an iCloud account. Obviously sharing via SMS or email is best for this.
++ <h5> Determine how to share the link. Your recipient must have an iCloud account. Obviously sharing via SMS or email is best for this.</h5>
 
-![](https://i.imgur.com/UFHCs36.png)
+<img src="https://i.imgur.com/UFHCs36.png" style="width: 30%; height: 30%"/>​
 
-+ Send the invite.
++ <h5>Send the invite.</h5>
 
-![](https://i.imgur.com/AsYbG91.png)
+<img src="https://i.imgur.com/AsYbG91.png" style="width: 30%; height: 30%"/>​
 
 The party on the other side will see your note, and when tapping on it, the note will automatically open in Notes.app and you'll have fast syncing shared notes.
 
 If in the future you need to add more people to the list, or remove someone's access, just tap the plus person icon - people can be added, removed, or sharing can be stopped entirely from here.
 
-![](https://i.imgur.com/MmKzIyx.png)
+<img src="https://i.imgur.com/MmKzIyx.png" style="width: 30%; height: 30%"/>​
 
 ---
 <p align="right">Typed on Octopage</p>

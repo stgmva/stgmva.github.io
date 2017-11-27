@@ -34,6 +34,9 @@ permalink: "/projects/"
 [![](http://imgur.com/MxKjc5C.jpg)]({{ site.baseurl }}/2016-12-29-Handwired-Jelly-Comb-Numpad-Mod)  
 [Hand Wired Numpad]({{ site.baseurl }}/2016-12-29-Handwired-Jelly-Comb-Numpad-Mod)
 
+[![](https://imgur.com/dqOY03o.jpg)]({{ site.baseurl }}/2017-11-07-RedScarf-II-Ver-D-Build-Log)  
+[RedScarf II+ Ver.D]({{ site.baseurl }}/2017-11-07-RedScarf-II-Ver-D-Build-Log)
+
 ### In Progress:
 
 ![](http://imgur.com/qhbO2g6.jpg)

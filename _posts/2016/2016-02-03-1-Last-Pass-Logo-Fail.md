@@ -4,6 +4,8 @@ title: "Lastpass Logo Fail"
 subheadline: ""
 teaser: "As part of its acquisition by LogMeIn, Lastpass unveiled a new logo today."
 author: Morgan
+categories:
+  - linked
 breadcrumb: true
 ---
 

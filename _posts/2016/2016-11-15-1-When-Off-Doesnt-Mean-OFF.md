@@ -4,6 +4,8 @@ title: "Off Doesn't Mean OFF"
 subheadline: "Shazam is always listening"
 teaser: "Patrick Wardle's reversal of Shazam's code."
 author: Morgan
+categories:
+  - linked
 breadcrumb: true
 ---
 

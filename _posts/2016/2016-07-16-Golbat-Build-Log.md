@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "A Wild Golbat Appeared"
-subheadline: ""
+subheadline: "40% Keyboard Build Log"
 teaser: "Some folks think a 60% keyboard is small, they've got nothing on 40% boards."
 author: Morgan
 categories:

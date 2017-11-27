@@ -4,6 +4,8 @@ title: "TSA body scanning may be forced on 'some passengers'"
 subheadline: ""
 teaser: ""
 author: Morgan
+categories:
+  - linked
 breadcrumb: true
 ---
 

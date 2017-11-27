@@ -1,0 +1,5 @@
+[{x:2.25},"~\n`","Mute","Voldn","Volup","prev","play","next","&\n7","*\n8","(\n9",")\n0","_\n-","+\n=","|\n\\","Delete","Home","End","/","Backspace"],
+[{x:2.25,w:1.5},"Tab","Q","Up","E","R","T","Y","U","I","O","P","{\n[","}\n]",{w:1.5},"Backspace","7\nHome","8\nUp","9\nPgup",{h:2},"Tab"],
+[{x:2.25,w:1.75},"Caps","Left","Down","Right","F","G","H","J","K","L",":\n;","\"\n'",{w:2.25},"Enter","4\nLeft","5","6\nright"],
+[{x:2.25,w:2.25},"Shift","Z","X","C","V","B","N","M","<\n,",">\n.","?\n/",{w:2.75},"RShift","1\nEnd","2\nDown","3\nPgDn",{h:2},"Enter"],
+[{x:2.25,w:1.25},"Ctrl",{w:1.25},"Alt",{w:1.25},"Gui",{w:6.25},"fn0",{w:1.5},"fn27",{w:1.5},"Gui","fn25","fn26",{w:2},"0\nIns",".\nDel"]

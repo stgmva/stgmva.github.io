@@ -4,6 +4,8 @@ title: "South Carolina Ransomware"
 subheadline: ""
 teaser: "Government sanctioned and mandated ransomware, great."
 author: Morgan
+categories:
+  - linked
 breadcrumb: true
 ---
 

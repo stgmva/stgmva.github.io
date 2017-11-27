@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-fullwidth
 title: "Hot Keys Project Warmaster"
 subheadline: ""
 teaser: "Hot Keys Project had a sale last month for Easter themed keycaps. I picked up this Warmaster in anticipation for my Satan GH60 build."

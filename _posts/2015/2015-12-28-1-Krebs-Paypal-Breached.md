@@ -4,6 +4,8 @@ title: "Brian Krebs' PayPal Account Compromised Again"
 subheadline: ""
 teaser: "The bottom line is that no amount of good passwords and out-of-band security is a match for a determined hacker and poor company policies."
 author: Morgan
+categories:
+  - linked
 breadcrumb: true
 ---
 

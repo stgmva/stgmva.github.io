@@ -20,12 +20,6 @@ format: video
 					{% if page.video.contentURL %}<meta itemprop="contentURL" content="{{ page.video.contentURL }}" />{% endif %}
 					{% if page.video.embedURL %}<meta itemprop="embedURL" content="{{ page.video.embedURL }}" />{% endif %}
 
-					{% if page.teaser %}
-					<p class="teaser" itemprop="description">
-						{{ page.teaser }}
-					</p>
-					{% endif %}
-
 					{{ content }}
 
 					<div id="bottom" class="row t30">
@@ -33,7 +27,7 @@ format: video
 								 {% include next-previous-post-in-category %}
 							</div><!-- /.small-12.columns -->
 					</div>
-					
+
 					{% if page.show_meta == true %}
 					{% include _meta_information.html %}
 					{% endif %}

@@ -8,14 +8,19 @@
 - title: Archive
   url: "/archive"
   side: right
+  dropdown:
+  - title: "Apple"
+    url: "/apple/"
+  - title: "Keyboards"
+    url: "/keyboards/"
+  - title: "Tech"
+    url: "/tech/"
+  - title: "Videos"
+    url: "/videos/"
 
 - title: Projects
   url: "/projects"
   side: right
-  dropdown:
-  - title: "ErgoDox"
-    url: "/ErgoDox_Omnibus"
-
 
 - title: About
   url: "/aboutme"

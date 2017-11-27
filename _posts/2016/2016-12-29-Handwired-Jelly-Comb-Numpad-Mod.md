@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Handwired Jellycomb Numpad Mod Log"
-subheadline: ""
+title: "Handwired Jellycomb Numpad"
+subheadline: "Mod Log"
 teaser: "I see great possibilities with this numpad. The biggest reason why I prefer programmable boards vs standard boards is to get a certain set of keys - media controls and arrows. I largely see myself using the numpad at work when I'm using a 60% board. I can see myself using standard non-programmable boards now because all the critical keys I want/need are integrated into the numpad."
 author: Morgan
 categories:

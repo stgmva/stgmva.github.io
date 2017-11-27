@@ -4,6 +4,8 @@ title: "A Terrifying Piece of Paper"
 subheadline: ""
 teaser: ""
 author: Morgan
+categories:
+  - linked
 breadcrumb: true
 ---
 

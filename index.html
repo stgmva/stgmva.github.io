@@ -1,3 +1,118 @@
 ---
-layout: index
+layout: home
+title: Missouri Valley Tech
+featuredwidget1:
+  title: "AirPods"
+  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+  image: 'https://i.imgur.com/I8isfeM.jpg'
+  text: 'I picked up a set of AirPods about three weeks ago, and have been in love with them. They are one of the most Apple-y products I’ve ever used.'
+#widget1:
+#  title: "Red Scarf II+"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'https://imgur.com/ss99MF4.jpg'
+#  text: 'A 60% keyboard with integrated numpad.'
+#widget2:
+#  title: "Elvish SA Keycaps"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://imgur.com/ugFu4Fq.jpg'
+#  text: 'Dyesub PBT Keycaps from China.'
+#widget3:
+#  title: "Azio Retro Keyboard"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'https://imgur.com/rgXQDag.jpg'
+#  text: 'Mod log for the Azio.'
+sidebar: left
 ---
+
+
+
+<div class="row t20">
+
+	{% if page.featuredwidget1.title %}
+			<center><h1>Featured Post</h1></center>
+		{% include _index-widget.html widget=page.featuredwidget1 %}
+	{% endif %}
+
+</div>
+
+
+<div class="row t20">
+	{% if page.widget1.title %}
+		{% include _frontpage-widget.html widget=page.widget1 %}
+	{% endif %}
+
+
+	{% if page.widget2.title %}
+		{% include _frontpage-widget.html widget=page.widget2 %}
+	{% endif %}
+
+
+	{% if page.widget3.title %}
+		{% include _frontpage-widget.html widget=page.widget3 %}
+	{% endif %}
+</div>
+
+
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+		{% if page.widget1.title %}
+	<center><h1>Blog</h1><hr></center>
+		{% endif %}
+
+		<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h1 class="post-title">{{ post.title }}</h1>
+{% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+<br>
+<p class="post-meta">
+	{% assign author = site.data.authors[post.author] %}
+	<!-- Output author details if some exist. -->
+	{% if author %}
+<a href="{{ author.uri }}" target="_blank"> By {{ author.name }}</a> •
+{% endif %}
+      {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+<br>
+    {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
+		{% if post.iframe %}
+
+<div class="flex-video">
+		  {{ post.iframe}}
+</div>
+			{% endif %}
+		  {% if post.video.thumbnailUrl %}<meta itemprop="thumbnailUrl" content="{{ post.video.thumbnailUrl }}" />{% endif %}
+		  {% if post.video.contentURL %}<meta itemprop="contentURL" content="{{ post.video.contentURL }}" />{% endif %}
+		  {% if post.video.embedURL %}<meta itemprop="embedURL" content="{{ post.video.embedURL }}" />{% endif %}
+
+
+    </a>
+
+
+
+    <div class="post-entry">
+    {{ post.content }}
+    </div>
+
+   </article>
+  {% endfor %}
+</div>
+<br>
+<br>
+
+<div id="post-nav" class="row">
+  {% if paginator.previous_page %}
+  <div class="show-for-small-only"><div class="small-5 columns"><a class="button tiny radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div><!-- /.small-4.columns -->
+	  <div class="show-for-medium-up"><div class="small-5 columns"><a class="button small radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div>
+  {% endif %}
+  {% if paginator.next_page %}
+  <div class="show-for-small-only"><div class="small-5 columns text-right"><a class="button tiny radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
+<div class="show-for-medium-up"><div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
+  {% endif %}
+</div>
+
+
+
+</ul>
+</div>
+</div>

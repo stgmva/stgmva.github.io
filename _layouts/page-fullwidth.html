@@ -1,0 +1,48 @@
+---
+layout: default
+format: page-fullwidth
+---
+{% if page.image.title %}
+<div class="row t30">
+	<div class="small-12 columns">
+		<img src="{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}">
+		{% if page.image.caption_url and page.image.caption %}
+		<p class="text-right caption">
+			<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+		</p>
+		{% endif %}
+	</div><!-- /.small-12.columns -->
+</div><!-- /.row -->
+{% endif %}
+
+
+<div class="row t30">
+	<div class="medium-12 columns">
+		<article>
+			<header>
+<h1>{{ page.title }}</h1>
+				{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+			</header>
+
+
+
+			{{ content }}
+		</article>
+
+
+		{% if page.show_meta == true %}
+		{% include _meta_information.html %}
+		{% endif %}
+
+		<div id="bottom" class="row t30">
+				<div class="small-12 columns">
+					 {% include next-previous-post-in-category %}
+				</div><!-- /.small-12.columns -->
+		</div>
+		
+		{% if page.comments == true %}
+		{% include _comments.html %}
+		{% endif %}
+
+	</div><!-- /.medium-12.columns -->
+</div><!-- /.row -->

@@ -1,0 +1,29 @@
+#
+#   Navigation to the left › side: left
+#
+- title: Home
+  url: "/"
+  side: right
+
+- title: Archives
+  url: ""
+  side: right
+  dropdown:
+  - title: "All Posts"
+    url: "/archive/"
+  - title: "Apple"
+    url: "/apple/"
+  - title: "Keyboards"
+    url: "/keyboards/"
+  - title: "Tech"
+    url: "/tech/"
+  - title: "Videos"
+    url: "/videos/"
+
+- title: Projects
+  url: "/projects"
+  side: right
+
+- title: About
+  url: "/aboutme"
+  side: right

@@ -1,27 +1,27 @@
 ---
 layout: home
 title: Missouri Valley Tech
-#featuredwidget1:
-#  title: "AirPods"
-#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-#  image: 'https://i.imgur.com/I8isfeM.jpg'
-#  text: 'I picked up a set of AirPods about three weeks ago, and have been in love with them. They are one of the most Apple-y products I’ve ever used.'
+featuredwidget1:
+  title: "RedScarf II Build Log"
+  url: '/keyboards/2017-11-07-RedScarf-II-Ver-D-Build-Log'
+  image: 'https://i.imgur.com/I8isfeM.jpg'
+  text: 'A 60% board with integrated numpad'
 #widget1:
-#  title: "Red Scarf II+"
-#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-#  image: 'https://imgur.com/ss99MF4.jpg'
-#  text: 'A 60% keyboard with integrated numpad.'
+#  title: "TITLE HERE"
+#  url: 'ABSOLUTE URL'
+#  image: 'IMAGE HERE'
+#  text: 'DESRIPTION HERE'
 #widget2:
-#  title: "Elvish SA Keycaps"
-#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-#  image: 'http://imgur.com/ugFu4Fq.jpg'
-#  text: 'Dyesub PBT Keycaps from China.'
+#  title: "TITLE HERE"
+#  url: 'ABSOLUTE URL'
+#  image: 'IMAGE HERE'
+#  text: 'DESRIPTION HERE'
 #widget3:
-#  title: "Azio Retro Keyboard"
-#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-#  image: 'https://imgur.com/rgXQDag.jpg'
-#  text: 'Mod log for the Azio.'
-sidebar:
+#  title: "TITLE HERE"
+#  url: 'ABSOLUTE URL'
+#  image: 'IMAGE HERE'
+#  text: 'DESRIPTION HERE'
+sidebar: right
 ---
 
 
@@ -52,8 +52,22 @@ sidebar:
 	{% endif %}
 </div>
 
+<div class="row t20"></div>
+{% if page.sidebar == "left" %}
+<div class="medium-4 columns medium-pull-0">
+  {% include _sidebar.html %}
+</div><!-- /.medium-4.columns -->
+{% endif %}
 
-	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+
+{% if page.sidebar == "right" %}
+<div class="medium-4 columns medium-push-8">
+  {% include _sidebar.html %}
+</div><!-- /.medium-4.columns -->
+{% endif %}
+
+
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-0{% endif %}{% if page.sidebar == "right" %} medium-pull-4{% endif %}">
 		{% if page.widget1.title %}
 	<center><h1>Blog</h1><hr></center>
 		{% endif %}

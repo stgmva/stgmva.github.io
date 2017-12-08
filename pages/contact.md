@@ -7,4 +7,4 @@ teaser: "Get in touch with me? Use the contact form."
 permalink: "/contact/"
 ---
 
-To contact, please email [blog@missourivalleyambulance.com](mailto:blog@missourivalleyambulance.com)
+To contact, please email [blog@missourivalley.tech](mailto:blog@missourivalley.tech)

@@ -24,7 +24,7 @@ author: Morganspeck
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'http://stgmva.github.io'
+url: 'https://stgmva.github.io'
 baseurl: ''
 
 
@@ -151,14 +151,14 @@ defaults:
 
 favicon-32x32:                          "favicon-32x32.png"
 touch-icon-192x192:                     "touch-icon-192x192.png"
-apple-touch-icon-180x180-precomposed:   "apple-touch-icon-180x180-precomposed.png"
-apple-touch-icon-152x152-precomposed:   "apple-touch-icon-152x152-precomposed.png"
-apple-touch-icon-144x144-precomposed:   "apple-touch-icon-144x144-precomposed.png"
-apple-touch-icon-120x120-precomposed:   "apple-touch-icon-120x120-precomposed.png"
-apple-touch-icon-114x114-precomposed:   "apple-touch-icon-114x114-precomposed.png"
-apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76-precomposed.png"
-apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72-precomposed.png"
-apple-touch-icon-precomposed:           "apple-touch-icon-precomposed.png"
+apple-touch-icon-180x180-precomposed:   "apple-touch-icon-180x180.png"
+apple-touch-icon-152x152-precomposed:   "apple-touch-icon-152x152.png"
+apple-touch-icon-144x144-precomposed:   "apple-touch-icon-144x144.png"
+apple-touch-icon-120x120-precomposed:   "apple-touch-icon-120x120.png"
+apple-touch-icon-114x114-precomposed:   "apple-touch-icon-114x114.png"
+apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76.png"
+apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72.png"
+apple-touch-icon-precomposed:           "apple-touch-icon.png"
 msapplication_tileimage:                "msapplication_tileimage.png"               # Size 144x144
 msapplication_tilecolor:                "#fabb00"
 
@@ -198,7 +198,7 @@ socialmedia:
 #
 # used in _includes/comments
 
-# disqus_shortname:
+disqus_shortname: missourivalleytech
 
 
 #      _____
@@ -222,7 +222,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-# google_analytics_tracking_id:
+google_analytics_tracking_id: UA-110905859-1
 
 
 

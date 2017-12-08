@@ -50,7 +50,7 @@ ErgoDox is designed with a Mini-USB port on the right hand for connecting to the
 ### RGB Underglow
 
 ![](https://i.imgur.com/uozsjvQ.jpg)
-[[Satan GH60]](http://missourivalleyambulance.com/2016-04-19-Satan-GH60-Build-Log)
+[[Satan GH60]]({{ site.baseurl }}/2016-04-19-Satan-GH60-Build-Log)
 
 Driven my how much I like the RGB Underglow on my Satan board, I plan to integrate the same on ErgoDox. RGB will be the most ambitious part of this build.
 

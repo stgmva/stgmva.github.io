@@ -22,7 +22,7 @@ Further, in a statement today, Apple said the call history syncing is intentiona
 
 A lot of people are noting that Apple's [whitepaper on iOS security](https://www.apple.com/business/docs/iOS_Security_Guide.pdf) has a mention of call history in iCloud backups, I can't find anywhere in said whitepaper acknowledging that call history/logs are synced using iCloud. Not sure if this is just an oversight in documentation, or a lack of transparency.
 
-What's curious to me is that Apple uses iCloud for this type of sync at all. The narrative is that it's necessary to sync calls across all devices - [my understanding of iMessage](http://missourivalleyambulance.com/2016-04-25-iMessage-New-Device-Sec) is that Apple keys each device and keys each message to be accessible by all devices. Why not employ a similar muli-keying for these type of sensitive records and use iMessage or something similar to enable the sync? Alternatively, if Apple _is_ doing multi-keying for syncing these types of records, why doesn't the whitepaper make mention of this?
+What's curious to me is that Apple uses iCloud for this type of sync at all. The narrative is that it's necessary to sync calls across all devices - [my understanding of iMessage]({{ site.baseurl }}/2016-04-25-iMessage-New-Device-Sec) is that Apple keys each device and keys each message to be accessible by all devices. Why not employ a similar muli-keying for these type of sensitive records and use iMessage or something similar to enable the sync? Alternatively, if Apple _is_ doing multi-keying for syncing these types of records, why doesn't the whitepaper make mention of this?
 
 [[via Macrumors](http://www.macrumors.com/2016/11/17/apple-says-icloud-call-syncing-intentional/)]
 

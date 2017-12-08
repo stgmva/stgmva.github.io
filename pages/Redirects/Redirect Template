@@ -3,5 +3,5 @@ title: "A website that doesn't exit"
 layout: redirect
 sitemap: false
 permalink: "/"
-redirect_to:  "missourivalleytech.github.io"
+redirect_to:  "http://missourivalley.tech/"
 ---

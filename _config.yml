@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: "MISSOURI VALLEY TECH"
+title: "MISSOURI VALLEY AMBULANCE"
 
 
 # The slogan describes your website and is used on homepage in <title> and other important places
@@ -16,7 +16,7 @@ slogan: ""
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "Missouri Valley Tech is the inane ramblings and various projects of a gadget geek, Apple lover, and keyboard wonk."
+description: "Missouri Valley Ambulance is the inane ramblings and various projects of a gadget geek, Apple lover, and keyboard wonk."
 
 # Main author of the website
 # See > authors.yml
@@ -24,14 +24,14 @@ author: Morganspeck
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://stgmva.github.io'
+url: 'http://stgmva.github.io'
 baseurl: ''
 
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/logo.png"
+avatar: "/img/avatar-icon.png"
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -113,7 +113,7 @@ defaults:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: Morgan    # Default author for posts
+      author: Morgan Speck    # Default author for posts
 
 
 
@@ -151,14 +151,14 @@ defaults:
 
 favicon-32x32:                          "favicon-32x32.png"
 touch-icon-192x192:                     "touch-icon-192x192.png"
-apple-touch-icon-180x180-precomposed:   "apple-touch-icon-180x180.png"
-apple-touch-icon-152x152-precomposed:   "apple-touch-icon-152x152.png"
-apple-touch-icon-144x144-precomposed:   "apple-touch-icon-144x144.png"
-apple-touch-icon-120x120-precomposed:   "apple-touch-icon-120x120.png"
-apple-touch-icon-114x114-precomposed:   "apple-touch-icon-114x114.png"
-apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76.png"
-apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72.png"
-apple-touch-icon-precomposed:           "apple-touch-icon.png"
+apple-touch-icon-180x180-precomposed:   "apple-touch-icon-180x180-precomposed.png"
+apple-touch-icon-152x152-precomposed:   "apple-touch-icon-152x152-precomposed.png"
+apple-touch-icon-144x144-precomposed:   "apple-touch-icon-144x144-precomposed.png"
+apple-touch-icon-120x120-precomposed:   "apple-touch-icon-120x120-precomposed.png"
+apple-touch-icon-114x114-precomposed:   "apple-touch-icon-114x114-precomposed.png"
+apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76-precomposed.png"
+apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72-precomposed.png"
+apple-touch-icon-precomposed:           "apple-touch-icon-precomposed.png"
 msapplication_tileimage:                "msapplication_tileimage.png"               # Size 144x144
 msapplication_tilecolor:                "#fabb00"
 
@@ -186,8 +186,7 @@ msapplication_tilecolor:                "#fabb00"
 #
 #  Open _data/socialmedia.yml to adjust the left and right topbar navigation
 #
-socialmedia:
-  twitter: movalleytech
+
 
 #        ____  _
 #       / __ \(_)________ ___  _______
@@ -198,7 +197,7 @@ socialmedia:
 #
 # used in _includes/comments
 
-disqus_shortname: missourivalleytech
+# disqus_shortname:
 
 
 #      _____
@@ -222,7 +221,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-google_analytics_tracking_id: UA-110905859-1
+google_analytics_tracking_id: UA-110962413-1
 
 
 

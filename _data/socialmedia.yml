@@ -1,10 +1,10 @@
 - name: Twitter
-  url: http://twitter.com/movalleytech
+  url: http://twitter.com/mvambulance
   class: icon-twitter
   title: ""
 
 - name: Email
-  url: mailto:blog@missourivalley.tech
+  url: mailto:blog@missourivalleyambulance.com
   class: icon-mail
   title: ""
 

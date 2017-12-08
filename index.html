@@ -1,42 +1,27 @@
 ---
 layout: home
-title: Missouri Valley Tech
-featuredwidget1:
-  title: "RedScarf II Build Log"
-  url: '/keyboards/2017-11-07-RedScarf-II-Ver-D-Build-Log'
-  image: 'https://i.imgur.com/I8isfeM.jpg'
-  text: 'A 60% board with integrated numpad'
-#widget1:
-#  title: "TITLE HERE"
-#  url: 'ABSOLUTE URL'
-#  image: 'IMAGE HERE'
-#  text: 'DESRIPTION HERE'
-#widget2:
-#  title: "TITLE HERE"
-#  url: 'ABSOLUTE URL'
-#  image: 'IMAGE HERE'
-#  text: 'DESRIPTION HERE'
-#widget3:
-#  title: "TITLE HERE"
-#  url: 'ABSOLUTE URL'
-#  image: 'IMAGE HERE'
-#  text: 'DESRIPTION HERE'
-#sidebar: right
+title: Missouri Valley Ambulance
+# widget1:
+#  title: "Widget 1"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+# widget2:
+#  title: "Widget 2"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+# widget3:
+#  title: "Widget 3"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
 ---
 
 
 
-<div class="row t20">
 
-	{% if page.featuredwidget1.title %}
-			<center><h1>Featured Post</h1></center>
-		{% include _index-widget.html widget=page.featuredwidget1 %}
-	{% endif %}
-
-</div>
-
-
-<div class="row t20">
+<center><div class="row t20">
 	{% if page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
 	{% endif %}
@@ -50,29 +35,11 @@ featuredwidget1:
 	{% if page.widget3.title %}
 		{% include _frontpage-widget.html widget=page.widget3 %}
 	{% endif %}
-</div>
-
-<div class="row t20"></div>
-{% if page.sidebar == "left" %}
-<div class="medium-4 columns medium-pull-0">
-  {% include _sidebar.html %}
-</div><!-- /.medium-4.columns -->
-{% endif %}
+</div></center>
 
 
-{% if page.sidebar == "right" %}
-<div class="medium-4 columns medium-push-8">
-  {% include _sidebar.html %}
-</div><!-- /.medium-4.columns -->
-{% endif %}
-
-
-	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-0{% endif %}{% if page.sidebar == "right" %} medium-pull-4{% endif %}">
-		{% if page.widget1.title %}
-	<center><h1>Blog</h1><hr></center>
-		{% endif %}
-
-		<div class="posts">
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+<div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
     <a href="{{ post.url | prepend: site.baseurl }}">

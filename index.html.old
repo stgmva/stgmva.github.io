@@ -1,0 +1,99 @@
+---
+layout: home
+title: Missouri Valley Ambulance
+# widget1:
+#  title: "Widget 1"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+# widget2:
+#  title: "Widget 2"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+# widget3:
+#  title: "Widget 3"
+#  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
+#  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
+#  text: ''
+---
+
+
+
+
+<center><div class="row t20">
+	{% if page.widget1.title %}
+		{% include _frontpage-widget.html widget=page.widget1 %}
+	{% endif %}
+
+
+	{% if page.widget2.title %}
+		{% include _frontpage-widget.html widget=page.widget2 %}
+	{% endif %}
+
+
+	{% if page.widget3.title %}
+		{% include _frontpage-widget.html widget=page.widget3 %}
+	{% endif %}
+</div></center>
+
+
+	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h1 class="post-title">{{ post.title }}</h1>
+{% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+<br>
+<p class="post-meta">
+	{% assign author = site.data.authors[post.author] %}
+	<!-- Output author details if some exist. -->
+	{% if author %}
+<a href="{{ author.uri }}" target="_blank"> By {{ author.name }}</a> •
+{% endif %}
+      {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+<br>
+    {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" ><img src="{{ post.image.thumb }}" class="alignleft" width="150" height="150"></a>{% endif %}
+		{% if post.iframe %}
+
+<div class="flex-video">
+		  {{ post.iframe}}
+</div>
+			{% endif %}
+		  {% if post.video.thumbnailUrl %}<meta itemprop="thumbnailUrl" content="{{ post.video.thumbnailUrl }}" />{% endif %}
+		  {% if post.video.contentURL %}<meta itemprop="contentURL" content="{{ post.video.contentURL }}" />{% endif %}
+		  {% if post.video.embedURL %}<meta itemprop="embedURL" content="{{ post.video.embedURL }}" />{% endif %}
+
+
+    </a>
+
+
+
+    <div class="post-entry">
+    {{ post.content }}
+    </div>
+
+   </article>
+  {% endfor %}
+</div>
+<br>
+<br>
+
+<div id="post-nav" class="row">
+  {% if paginator.previous_page %}
+  <div class="show-for-small-only"><div class="small-5 columns"><a class="button tiny radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div><!-- /.small-4.columns -->
+	  <div class="show-for-medium-up"><div class="small-5 columns"><a class="button small radius prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a></div></div>
+  {% endif %}
+  {% if paginator.next_page %}
+  <div class="show-for-small-only"><div class="small-5 columns text-right"><a class="button tiny radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
+<div class="show-for-medium-up"><div class="small-5 columns text-right"><a class="button small radius next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">  Older Posts &rarr;</a></div></div><!-- /.small-4.columns -->
+  {% endif %}
+</div>
+
+
+
+</ul>
+</div>
+</div>

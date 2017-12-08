@@ -137,7 +137,7 @@ I find the contrast between the red and the 'murdered out' black keycaps fantast
 
 ![](http://imgur.com/1iNdGn2.jpg)
 
-I anticipate that this board will usurp my [Satan GH60](http://missourivalleyambulance.com/2016-04-19-Satan-GH60-Build-Log) to become my new daily driver.
+I anticipate that this board will usurp my [Satan GH60]({{ site.baseurl }}/2016-04-19-Satan-GH60-Build-Log) to become my new daily driver.
 
 ---
 <p align="right">Typed on Clueboard</p>

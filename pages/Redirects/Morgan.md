@@ -3,5 +3,5 @@ title: "A website that doesn't exit"
 layout: redirect
 sitemap: false
 permalink: "/Morgan"
-redirect_to:  "http://missourivalley.tech/aboutme"
+redirect_to:  "/aboutme"
 ---

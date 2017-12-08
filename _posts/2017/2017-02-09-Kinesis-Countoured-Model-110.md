@@ -18,7 +18,7 @@ I got the board for a steal on [/r/mechmarket](https://www.reddit.com/r/mechmark
 
 The Kinesis is notable for its split design and ergonomic keywells.
 
-[ErgoDox](http://missourivalleyambulance.com/ErgoDox_Omnibus) derives much of its design from the Kinesis. Given that I've been using an ErgoDox as my daily driver at work for some time, using the Kinesis (albiet briefly) has proven fairly easy.
+[ErgoDox]({{ site.baseurl }}/ErgoDox_Omnibus) derives much of its design from the Kinesis. Given that I've been using an ErgoDox as my daily driver at work for some time, using the Kinesis (albiet briefly) has proven fairly easy.
 
 ![](http://imgur.com/eScRdV0.jpg)
 

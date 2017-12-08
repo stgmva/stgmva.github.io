@@ -5,6 +5,7 @@ subheadline: ""
 teaser: ""
 author: Morgan
 breadcrumb: true
+categories: linked
 ---
 
 > Anti-virus company MacKeeper is making headlines today for its lax security on a customer database that contained 13 million customer records complete with names, email addresses, usernames, password hashes, phone numbers, IP address, and system information.

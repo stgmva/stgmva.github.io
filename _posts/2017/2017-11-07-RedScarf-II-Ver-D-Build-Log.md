@@ -13,6 +13,7 @@ image:
 categories:
   - keyboards
 breadcrumb: true
+comments: true
 ---
 
 I've long been interested in RedScarf keyboards, their interesting interpretations of 60% keyboard layouts. The most well-known variants are the [RedScarf II Ver.B](https://www.massdrop.com/buy/red-scarf-ii-ver-b-custom-mechanical-keyboard-kit?mode=guest_open) (65% + 10 Fkeys in 2 columns), and the [RedScarf III 96](https://www.massdrop.com/buy/red-scarf-iii-ver-a-96-key-custom-keyboard-kit?mode=guest_open) (60% + Numpad + Fkey row). I'd been particularly fascinated with the RS96 for a while. It seemed to be a really great and efficient layout, one that provides nearly a full-sized layout, but with all the keys brought together, reducing the board's overall size. Of course, by the time I got seriously interested in the RS96 it was nowhere to be found - which is probably a good thing. After thinking long and hard I realized that what I _really_ wanted was an RS96 without the function key row. I rarely make use of function keys, so I really wanted a 60% board with built-in numpad. Then one day along came the [RedScarf II Ver.D](https://www.massdrop.com/buy/red-scarf-ii-plus-ver-d-custom-mechanical-keyboard-kit?mode=guest_open) - I had to have it.
